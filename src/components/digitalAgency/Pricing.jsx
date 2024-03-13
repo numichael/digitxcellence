@@ -57,13 +57,13 @@ const Pricing = () => {
                 <div className='flex flex-col lg:flex-row gap-8'>
                     {
                         onDisplay.map((price, index) => (
-                            <div className='w-full lg:w-1/3 h-[42rem] bg-white rounded-[2rem] p-8 border border-[#b1bec377] flex flex-col gap-10' key={index}>
+                            <div className='w-full lg:w-1/3 h-[36rem] lg:h-[42rem] bg-white rounded-[2rem] p-8 border border-[#b1bec377] flex flex-col gap-10' key={index}>
                                 <div className='flex flex-col p-4 border-b border-[#b2bdc177]'>
                                     <h3 className='text-blue-600 text-3xl lg:text-[2.5rem] text-center'>{price.name}</h3>
                                     <p className="text-center">{price.about}</p>
                                 </div>
                                 <span className='flex items-end justify-center'><h2 className='text-4xl lg:text-7xl'>${price.price}</h2><span className='text-[#525b5e77] text-[0.85rem] lg:text-md pb-2 font-semibold'>{price.price > 100? "/year": "/month"}</span></span>
-                                <button className='p-4 lg:p-8 border font-semibold text-[0.85rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
+                                <button className='p-6 lg:p-8 border font-semibold text-[0.85rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
                                 <div className='flex flex-col gap-4 px-4 text-[#3c424577] font-semibold'>
                                     {
                                         price.features.map((feature, index)=> (
