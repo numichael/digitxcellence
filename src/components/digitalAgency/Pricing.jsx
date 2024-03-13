@@ -69,7 +69,7 @@ const Pricing = () => {
                                         price.features.map((feature, index)=> (
                                             <div key={index} className='flex gap-4 items-center'>
                                                 <FontAwesomeIcon icon={faCheck}/>
-                                                <p>{feature}</p>
+                                                <p className='text-[0.85rem] lg:text-md'>{feature}</p>
                                             </div>
                                         ))
                                     }
