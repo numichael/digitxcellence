@@ -63,7 +63,7 @@ const Pricing = () => {
                                     <p className="text-center">{price.about}</p>
                                 </div>
                                 <span className='flex items-end justify-center'><h2 className='text-4xl lg:text-7xl'>${price.price}</h2><span className='text-[#525b5e77] text-[0.85rem] lg:text-md pb-2 font-semibold'>{price.price > 100? "/year": "/month"}</span></span>
-                                <button className='p-8 border font-semibold text-[0.85rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
+                                <button className='p-4 lg:p-8 border font-semibold text-[0.85rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
                                 <div className='flex flex-col gap-4 px-4 text-[#3c424577] font-semibold'>
                                     {
                                         price.features.map((feature, index)=> (
