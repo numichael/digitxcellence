@@ -1,18 +1,21 @@
 import React from 'react'
+import laptoppose from "../../assets/images/laptop-poses.png"
 
 const Intro = () => {
     return (
-        <div className='w-full h-screen max-h-[50rem] max-w-[90rem] flex items-center'>
-            <div className='w-1/2 flex flex-col gap-10'>
-                <h1 className='font-semibold text-7xl'>Build beautiful websites & mobile apps.</h1>
+        <div className='w-full min-h-[30rem] max-h-[50rem] pt-[10rem] pb-8 px-4 gap-10 lg:max-w-[90rem] flex flex-col lg:flex-row justify-center items-center'>
+            <div className='w-full lg:w-1/2 flex flex-col gap-5 lg:gap-10'>
+                <h1 className='font-semibold text-4xl lg:text-7xl'>Build beautiful websites & mobile apps.</h1>
                 <p className='text-lg'>Create live segments and target the right people for messages based on their behaviors.</p>
                 <div>
-                    <button className='bg-blue-600 rounded-lg p-6 text-white'>
+                    <button className='bg-blue-600 rounded-[1rem] p-6 text-white'>
                         Get Started
                     </button>
                 </div>
             </div>
-            <div className='w-1/2'></div>
+            <div className='w-full lg:w-1/2 flex justify-center'>
+                <img src={laptoppose} className='scale-90 lg:scale-1' alt="" />
+            </div>
         </div>
     )
 }
