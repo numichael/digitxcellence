@@ -13,7 +13,7 @@ const Contact = () => {
         "fa-brands fa-linkedin",
     ]
     return (
-        <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4'>
+        <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4 lg:py-[3rem]'>
             <div className='w-full flex justify-evenly lg:justify-between max-w-[90rem] lg:gap-[6rem]'>
                 {
                     profiles.map((profile, index) => (

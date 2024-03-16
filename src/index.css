@@ -7,3 +7,7 @@
 * {
     font-family: 'Poppins';
 }
+
+.blur-border {
+    backdrop-filter: blur(12px); 
+}

@@ -13,7 +13,7 @@ const Main = () => {
     return (
         <div className='w-full flex flex-col items-center lg:p-0'>
             <Intro />
-            <Services />
+            <Services digitalAgency={true} />
             <About />
             <Projects />
             <Stats />
