@@ -19,10 +19,8 @@ const About = () => {
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">About Us</p>
                     <h2 className='text-3xl lg:text-6xl'>We do design, code & develop.</h2>
                     <div className="flex flex-col gap-6">
-                        <p className="text-[0.85rem] lg:text-lg">Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a.
-                            Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.</p>
-                        <p className='text-[0.85rem] lg:text-lg'>Nulla pharetra hendrerit mi quis dapibus.
-                            Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero.</p>
+                        <p className="text-[0.85rem] lg:text-lg">Our mission at Digit Xcellence is to empower businesses and individuals through cutting-edge digital solutions. We envision a world where every interaction is enhanced by technology, driving growth, and fostering connections.</p>
+                        <p className='text-[0.85rem] lg:text-lg'>Ready to elevate your digital presence? Partner with Digit Xcellence and unlock the limitless possibilities of the digital world. Get in touch with us today to embark on your journey to digital excellence!</p>
                     </div>
                 </div>
                 <div className='flex flex-col gap-10 p-8 lg:p-14 bg-white w-full lg:w-[45%] rounded-[2rem]'>

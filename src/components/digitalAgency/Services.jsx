@@ -4,12 +4,13 @@ import bell from "../../assets/images/bell.png"
 const Services = ({ digitalAgency = false }) => {
 
     const services = [
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell },
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell },
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell },
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell },
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell },
-        { name: "Development", text: "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.", icon: bell }
+        { name: "Web Design", text: "From sleek and responsive websites to captivating user experiences, we turn your digital vision into reality.", icon: bell },
+        { name: "Software Development", text: "Harness the power of cutting-edge technology with our bespoke software solutions designed to streamline your business processes.", icon: bell },
+        { name: "Digital Marketing", text: "Elevate your online presence and drive results with our data-driven digital marketing strategies tailored to your unique goals.", icon: bell },
+        { name: "Graphics Design", text: "Stand out from the crowd with stunning visuals that captivate and engage your audience across every platform.", icon: bell },
+        { name: "Software Development Training", text: "Unlock the potential of your workforce with in-depth training in software development.", icon: bell },
+        { name: "Web Design Training", text: "Empower your team with the skills to create stunning websites that leave a lasting impression.", icon: bell },
+        { name: "Digital Skill Training", text: "Equip individuals with the digital skills needed to thrive in today's digital landscape.", icon: bell }
     ]
 
     return (
@@ -18,7 +19,7 @@ const Services = ({ digitalAgency = false }) => {
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">What We Can Do For You</p>
                     <h2 className={`text-3xl lg:text-6xl ${digitalAgency ? "text-white" : ""}`}>Services we can help you with</h2>
-                    {digitalAgency ? <p className="text-[0.85rem] lg:text-lg font-semibold text-[#888686]">Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu imperdiet.</p> : null}
+                    {digitalAgency ? <p className="text-[0.85rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. With a team of seasoned professionals dedicated to crafting exceptional digital solutions, we offer a comprehensive suite of services tailored to meet your every need.</p> : null}
                 </div>
                 <div className="grid lg:grid-cols-3 justify-center gap-10">
                     {

@@ -2,7 +2,7 @@ import React from 'react'
 import Intro from './Intro'
 import Speciality from './Speciality'
 import Services from '../digitalAgency/Services'
-import Values from './Values'
+import Values from '../digitalAgency/Values'
 import Contact from '../digitalAgency/Contact'
 
 const CompanyServices = () => {

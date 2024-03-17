@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const [tabs, setTabs] = useState([
         {
-            name: "Digital Agency", display: false, options: [
+            name: "Home", display: false, options: [
                 { name: "Digital Agency", path: "/" },
                 { name: "Creative Agency", path: "/creative-agency" },
                 { name: "Corporate Agency" },
@@ -17,15 +17,15 @@ const Navbar = () => {
                 { name: "RTO Demo" },
             ]
         },
-        // {
-        //     name: "Services", display: false, options: [
-        //         { name: "Service" },
-        //         { name: "Service One" },
-        //         { name: "Service Two" },
-        //     ]
-        // },
         {
-            name: "Portfolio", display: false, options: [
+            name: "Services", display: false, options: [
+                { name: "Service" },
+                { name: "Service One" },
+                { name: "Service Two" },
+            ]
+        },
+        {
+            name: "Trainng", display: false, options: [
                 { name: "option 1" },
                 { name: "option 1" },
                 { name: "option 1" },

@@ -8,6 +8,7 @@ import Projects from './Projects'
 import Services from './Services'
 import Stats from './Stats'
 import Testimonial from './Testimonial'
+import Values from './Values'
 
 const Main = () => {
     return (
@@ -17,8 +18,8 @@ const Main = () => {
             <About />
             <Projects />
             <Stats />
+            <Values />
             <Testimonial />
-            <Pricing />
             <Clients />
             <News />
             <Contact />

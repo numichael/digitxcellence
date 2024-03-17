@@ -3,12 +3,10 @@ import creative from "../../assets/images/creative.png"
 
 const Projects = () => {
     const projects = [
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" },
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" },
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" },
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" },
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" },
-        { name: "Creative Agency", image: creative, about: "Branding, Website, App" }
+        { name: "Calabar Tech Community", image: creative, about: "Branding, Website, App", link: "https://calabartechcommunity.com/" },
+        { name: "Property Mataaz", image: creative, about: "Branding, Website, App", link: "https://www.propertymataaz.com/" },
+        { name: "Loading Connect", image: creative, about: "Branding, Website, App", link: "https://loading-connect.netlify.app/" },
+        { name: "QRSweb", image: creative, about: "Branding, Website, App", link: "https://qrsweb.com/" },
     ]
     return (
         <div className='w-full min-h-[50rem] flex p-4 py-20 lg:p-[10rem] justify-center'>
@@ -19,7 +17,7 @@ const Projects = () => {
                     <div className="w-full grid lg:grid-cols-2 gap-20 justify-between">
                         {
                             projects.map((project, index) => (
-                                <div key={index} className='w-full h-[25rem] lg:h-[40rem]'>
+                                <a href={project.link} target='_blank' key={index} className='cursor-pointer w-full h-[25rem] lg:h-[40rem]'>
                                     <div className="relative w-full h-[80%] rounded-t-[2rem] overflow-hidden">
                                         <img src={project.image} className="w-full h-full object-cover transition-transform duration-1000 transform hover:scale-[1.2]" alt="Your Image" />
                                     </div>
@@ -27,7 +25,7 @@ const Projects = () => {
                                         <h3 className='text-xl lg:text-3xl'>{project.name}</h3>
                                         <p className='text-[0.85rem] lg:text-base'>{project.about}</p>
                                     </div>
-                                </div>
+                                </a>
                             ))
                         }
                     </div>
