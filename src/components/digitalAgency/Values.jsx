@@ -4,11 +4,11 @@ import bell from "../../assets/images/bell.png"
 const Values = ({ digitalAgency = false }) => {
 
     const values = [
-        { name: "Experienced Professionals", text: "Our team brings years of industry experience and expertise to every project, ensuring exceptional results.", icon: bell },
-        { name: "Dedication", text: "We're committed to delivering solutions that exceed your expectations, no matter the size or scope of the project.", icon: bell },
-        { name: "Honesty", text: "Transparency and integrity are at the core of everything we do. You can trust us to always be upfront and honest.", icon: bell },
-        { name: "Mentorship", text: "For trainees, we offer mentorship programs to nurture talent and help individuals reach their full potential.", icon: bell },
-        { name: "Continued Support", text: "We're with you every step of the way, providing ongoing support and guidance long after the project is complete.", icon: bell }
+        { name: "Experienced Professionals", text: "With extensive industry experience and expertise acquired over many years, our team consistently delivers exceptional results for every project. Leveraging our comprehensive understanding of industry dynamics and emerging trends, we craft tailored solutions that exceed client expectations.", icon: bell },
+        { name: "Honesty", text: "In all we do, transparency and integrity shine bright, Guiding us with honesty, our actions alight. You can trust us to always be forthright, For openness and sincerity are our guiding light.", icon: bell },
+        { name: "Dedication", text: "Our dedication stands firm, promising solutions that go beyond expectations. Regardless of project size or complexity, we strive for excellence. With tailored approaches, we ensure satisfaction in every endeavor. Trust us to deliver results that surpass your vision.", icon: bell },
+        { name: "Mentorship", text: "Our mentorship programs for trainees offer tailored guidance and support, empowering individuals to explore their potential, acquire valuable skills, and excel in their chosen paths with confidence and determination.", icon: bell },
+        { name: "Continued Support", text: "We're dedicated to standing by your side every step of the way, offering unwavering support and guidance that extends far beyond the completion of the project, ensuring your sustained success, growth, fulfillment, and satisfaction.", icon: bell }
     ]
 
     return (
