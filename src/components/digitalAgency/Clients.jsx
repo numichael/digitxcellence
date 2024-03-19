@@ -24,9 +24,9 @@ const clients = [
                 <div className="grid grid-cols-2 lg:grid-cols-4 lg:gap-[6rem]">
                     {
                         clients.map((client,index)=> (
-                            <div className='relative flex justify-center'>
+                            <div key={index} className='relative flex justify-center'>
                                 <div className="bg-[#181821] opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div>
-                             <img key={index} src={client} className='w-[8rem] h-[5rem] lg:w-auto lg:h-auto' alt="" />
+                             <img src={client} className='w-[8rem] h-[5rem] lg:w-auto lg:h-auto' alt="" />
                             </div>
                         ))
                     }

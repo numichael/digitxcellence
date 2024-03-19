@@ -8,9 +8,7 @@ const Services = ({ digitalAgency = false }) => {
         { name: "Software Development", text: "Harness the power of cutting-edge technology with our bespoke software solutions designed to streamline your business processes.", icon: bell },
         { name: "Digital Marketing", text: "Elevate your online presence and drive results with our data-driven digital marketing strategies tailored to your unique goals.", icon: bell },
         { name: "Graphics Design", text: "Stand out from the crowd with stunning visuals that captivate and engage your audience across every platform.", icon: bell },
-        { name: "Software Development Training", text: "Unlock the potential of your workforce with in-depth training in software development.", icon: bell },
-        { name: "Web Design Training", text: "Empower your team with the skills to create stunning websites that leave a lasting impression.", icon: bell },
-        { name: "Digital Skill Training", text: "Equip individuals with the digital skills needed to thrive in today's digital landscape.", icon: bell }
+        { name: "Academy", text: "Empower your team and unlock their potential with in-depth training in web design, software development, coding for kids, and digital skill training, ensuring they have the skills to unleash their creativity, becoming the next generation of tech enthusiasts.", icon: bell },
     ]
 
     return (

@@ -1,31 +1,38 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { Outlet, useNavigate } from 'react-router-dom'
+import { Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { scroller } from 'react-scroll'
 
 const Navbar = () => {
 
     const [tabs, setTabs] = useState([
         {
-            name: "Home", display: false, options: [
-                { name: "Digital Agency", path: "/" },
-                { name: "Creative Agency", path: "/creative-agency" },
-                { name: "Corporate Agency" },
-                { name: "Personal Portfolio" },
-                { name: "Home Startup" },
-                { name: "RTO Demo" },
+            name: "Pages", display: false, options: [
+                { name: "Home", path: "/home home" },
+                { name: "About Us", path: "/home aboutus" },
+                { name: "Services", path: "/home services" },
+                { name: "Projects", path: "/home projects" },
+                { name: "Our Stats", path: "/home stats" },
+                { name: "Our Values", path: "/home values" },
+                { name: "Testimonial", path: "/home testimonial" },
+                { name: "Top Clients", path: "/home clients" },
+                { name: "Blog", path: "/home blog" },
+                { name: "Contact", path: "/home contact" },
             ]
         },
         {
             name: "Services", display: false, options: [
-                { name: "Service" },
-                { name: "Service One" },
-                { name: "Service Two" },
+                { name: "All Services", path: "/services home" },
+                { name: "Speciality", path: "/services speciality" },
+                { name: "Values", path: "/services values" },
+                { name: "Services Overview", path: "/services overview" },
+                { name: "Contact", path: "/services contact" },
             ]
         },
         {
-            name: "Trainng", display: false, options: [
+            name: "Academy", display: false, options: [
                 { name: "option 1" },
                 { name: "option 1" },
                 { name: "option 1" },
@@ -33,21 +40,21 @@ const Navbar = () => {
                 { name: "option 1" },
             ]
         },
-        {
-            name: "Pages", display: false, options: [
-                { name: "About Us" },
-                { name: "Our Office" },
-                { name: "Case Study" },
-                { name: "Case Study Details" },
-                { name: "Team" },
-                { name: "Team Details" },
-                { name: "Testimonial" },
-                { name: "Pricing Table" },
-                { name: "Typography" },
-                { name: "404 Page" },
-                { name: "Coming Soon" },
-            ]
-        },
+        // {
+        //     name: "Pages", display: false, options: [
+        //         { name: "About Us" },
+        //         { name: "Our Office" },
+        //         { name: "Case Study" },
+        //         { name: "Case Study Details" },
+        //         { name: "Team" },
+        //         { name: "Team Details" },
+        //         { name: "Testimonial" },
+        //         { name: "Pricing Table" },
+        //         { name: "Typography" },
+        //         { name: "404 Page" },
+        //         { name: "Coming Soon" },
+        //     ]
+        // },
         {
             name: "Blog", display: false, options: [
                 { name: "option 1" },
@@ -88,6 +95,18 @@ const Navbar = () => {
 
     const navigate = useNavigate()
 
+    const location = useLocation()
+
+    const redirectPath = (payload) => {
+        if (location.pathname.includes(payload.split(' ')[0])) {
+            scroller.scrollTo(payload.split(' ')[1], { smooth: true, duration: 500 })
+        } else {
+            navigate(payload.split(' ')[0])
+            setTimeout(() => {
+                scroller.scrollTo(payload.split(' ')[1], { smooth: true, duration: 500 })
+            }, 20);
+        }
+    }
 
     return (
         <div className={`w-full flex flex-col items-center`}>
@@ -99,15 +118,15 @@ const Navbar = () => {
                     <div className='w-[70%] flex justify-evenly'>
                         {
                             tabs.map((tab, index) => (
-                                <div className="flex flex-col relative" onMouseEnter={() => toggleOptions(tab.name)} onMouseLeave={() => toggleOptions(tab.name)}>
-                                    <div className='flex items-center gap-3 cursor-pointer z-10' key={index}>
+                                <div key={index} className="flex flex-col relative" onMouseEnter={() => toggleOptions(tab.name)} onMouseLeave={() => toggleOptions(tab.name)}>
+                                    <div className='flex items-center gap-3 cursor-pointer z-10'>
                                         <p className='text-lg font-medium'>{tab.name}</p>
                                         <FontAwesomeIcon icon={faChevronDown} className='text-xs' />
                                     </div>
                                     <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
                                         {
-                                            tab.options.map((tab) => (
-                                                <div className='text-[#5b5d75] text-[0.85rem] lg:text-base cursor-pointer font-medium' onClick={() => navigate(tab.path)}>
+                                            tab.options.map((tab, index) => (
+                                                <div key={index} className='text-[#5b5d75] text-[0.85rem] lg:text-base cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
                                                     {tab.name}
                                                 </div>
                                             ))
@@ -117,9 +136,6 @@ const Navbar = () => {
                                 </div>
                             ))
                         }
-                        <div className='flex items-center gap-3 cursor-pointer z-10'>
-                            <p className='text-lg font-medium' onClick={() => navigate("/services")}>Services</p>
-                        </div>
                         <div className='flex items-center gap-3 cursor-pointer z-10'>
                             <p className='text-lg font-medium'>Contact</p>
                         </div>
