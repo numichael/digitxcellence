@@ -12,7 +12,7 @@ const Values = ({ digitalAgency = false }) => {
     ]
 
     return (
-        <div className={`w-full min-h-[50rem] flex justify-center px-4 py-20 lg:p-[10rem]`}>
+        <div className={`w-full min-h-[50rem] flex justify-center px-4 py-20 lg:p-[10rem] `}>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[8rem]'>
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">Our Values</p>
