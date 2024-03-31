@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const [tabs, setTabs] = useState([
         {
-            name: "Pages", display: false, options: [
+            name: "Home", path: "/home home", display: false, options: [
                 { name: "Home", path: "/home home" },
                 { name: "About Us", path: "/home aboutus" },
                 { name: "Services", path: "/home services" },
@@ -23,7 +23,7 @@ const Navbar = () => {
             ]
         },
         {
-            name: "Services", display: false, options: [
+            name: "Services", path: "/services home", display: false, options: [
                 { name: "All Services", path: "/services home" },
                 { name: "Speciality", path: "/services speciality" },
                 { name: "Values", path: "/services values" },
@@ -32,7 +32,7 @@ const Navbar = () => {
             ]
         },
         {
-            name: "Academy", display: false, options: [
+            name: "Academy", path: "/services home", display: false, options: [
                 { name: "option 1" },
                 { name: "option 1" },
                 { name: "option 1" },
@@ -56,7 +56,7 @@ const Navbar = () => {
         //     ]
         // },
         {
-            name: "Blog", display: false, options: [
+            name: "Blog", path: "/services home", display: false, options: [
                 { name: "option 1" },
                 { name: "option 1" },
                 { name: "option 1" },
@@ -111,7 +111,7 @@ const Navbar = () => {
     return (
         <div className={`w-full flex flex-col items-center`}>
             <div className={`w-full ${visible ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] hidden lg:flex justify-center fixed top-0 bg-white`}>
-                <div className="w-full max-w-[90rem] p-10 flex items-center justify-center">
+                <div className="w-full max-w-[90rem] p-8 flex items-center justify-center">
                     <div className="w-[30%]">
                         <h2 className='text-3xl font-semibold'>Digit Xcellence</h2>
                     </div>
@@ -120,24 +120,24 @@ const Navbar = () => {
                             tabs.map((tab, index) => (
                                 <div key={index} className="flex flex-col relative" onMouseEnter={() => toggleOptions(tab.name)} onMouseLeave={() => toggleOptions(tab.name)}>
                                     <div className='flex items-center gap-3 cursor-pointer z-10'>
-                                        <p className='text-lg font-medium'>{tab.name}</p>
-                                        <FontAwesomeIcon icon={faChevronDown} className='text-xs' />
+                                        <p className='text-base font-medium' onClick={() => redirectPath(tab.path)}>{tab.name}</p>
+                                        {/* <FontAwesomeIcon icon={faChevronDown} className='text-xs' /> */}
                                     </div>
-                                    <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
+                                    {/* <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
                                         {
                                             tab.options.map((tab, index) => (
-                                                <div key={index} className='text-[#5b5d75] text-[0.85rem] lg:text-base cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
+                                                <div key={index} className='text-[#5b5d75] text-[0.85rem] cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
                                                     {tab.name}
                                                 </div>
                                             ))
                                         }
-                                    </div>
+                                    </div> */}
 
                                 </div>
                             ))
                         }
                         <div className='flex items-center gap-3 cursor-pointer z-10'>
-                            <p className='text-lg font-medium'>Contact</p>
+                            <p className='text-base font-medium'>Contact</p>
                         </div>
                     </div>
                 </div>

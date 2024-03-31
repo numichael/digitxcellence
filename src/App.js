@@ -16,7 +16,7 @@ function App() {
   },[location])
   
   return (
-    <div className="App w-full flex justify-center text-gray-900">
+    <div className="App w-full flex justify-center text-gray-900 overflow-x-hidden">
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="home" element={<Main />} />

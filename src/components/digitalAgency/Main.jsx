@@ -26,12 +26,9 @@ const Main = () => {
             <Element className='w-full' name='projects'>
                 <Projects />
             </Element>
-            <Element className='w-full' name='stats'>
-                <Stats />
-            </Element>
-            <Element className='w-full' name='values'>
+            {/* <Element className='w-full' name='values'>
                 <Values />
-            </Element>
+            </Element> */}
             <Element className='w-full' name='testimonial'>
                 <Testimonial />
             </Element>
