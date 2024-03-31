@@ -38,7 +38,7 @@ const Main = () => {
             <Element className='w-full' name='blog'>
                 <News />
             </Element>
-            <Element className='w-full' name='contact'>
+            <Element className='w-full' name='contact-component'>
                 <Contact />
             </Element>
         </div>

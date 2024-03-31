@@ -27,7 +27,7 @@ const News = () => {
     ]
    
     return (
-        <div className='w-full min-h-[50rem] flex flex-col p-4 py-20 lg:p-[10rem] gap-[10rem] items-center'>
+        <div className='w-full min-h-[50rem] flex flex-col p-4 py-20 lg:px-[10rem] gap-[8rem] items-center'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[6rem]'>
                 <div className='flex flex-col items-center gap-4 lg:gap-6'>
                     <p className="text-[0.85rem] lg:text-xl text-red-700 lg:font-semibold">What's Going On</p>

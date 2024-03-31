@@ -28,7 +28,7 @@ const Projects = () => {
                     <div className="w-full grid gap-[8rem] items-center">
                         {
                             projects.map((project, index) => (
-                                <a href={project.link} target='_blank' key={index} className='cursor-pointer w-full h-[20rem] lg:h-[45rem]'>
+                                <a href={project.link} target='_blank' key={index} className='cursor-pointer w-full lg:h-[45rem]'>
                                     <div className="relative w-full h-[80%] flex gap-4 justify-center">
                                         <div className="flex flex-col gap-4 w-[35%] h-full">
                                             <img src={project.images[0]} className='w-full h-full border' alt="Your Image" />

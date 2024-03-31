@@ -4,9 +4,9 @@ import testuser from "../../assets/images/test-user.png"
 
 const Testimonial = () => {
     const testimonials = [
-        { icon: google, text: "We worked with the team at DigitXcellence to design our Autism Awareness Foundation company website and we couldn't be happier with the result.", name: "Omotoke T. Olowo", role: "Executive Director, TheraConnect Nigeria", userImage: testuser },
-        { icon: google, text: "Working with DigitXcellence was a pleasure. They were responsive, reliable, and delivered a top-quality web and mobile application on time and on budget.", name: "Kukoyi A. Abayomi", role: "CEO, Technoomni LLC", userImage: testuser },
-        { icon: google, text: "I have worked with several software development companies n the past, but none of them compare to DigitXcellence. They are truly experts in their field.", name: "Damilola Alabi", role: "Creative Director, Fusion 87 Design", userImage: testuser },
+        { icon: google, text: "We worked with the team at Digit Xcellence to design our Autism Awareness Foundation company website and we couldn't be happier with the result.", name: "Omotoke T. Olowo", role: "Executive Director, TheraConnect Nigeria", userImage: testuser },
+        { icon: google, text: "Working with Digit Xcellence was a pleasure. They were responsive, reliable, and delivered a top-quality web and mobile application on time and on budget.", name: "Kukoyi A. Abayomi", role: "CEO, Technoomni LLC", userImage: testuser },
+        { icon: google, text: "I have worked with several software development companies n the past, but none of them compare to Digit Xcellence. They are truly experts in their field.", name: "Damilola Alabi", role: "Creative Director, Fusion 87 Design", userImage: testuser },
     ]
     return (
         <div className='w-full flex p-4 py-20 lg:p-[10rem] justify-center'>
