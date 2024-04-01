@@ -10,19 +10,14 @@ import ServicesList from './ServicesList'
 const CompanyServices = () => {
   return (
     <div className='w-full flex flex-col items-center lg:p-0'>
-      <div className="flex flex-col gap-[10rem]">
-        <Element className='w-full' name='home'>
-          <Intro />
-        </Element>
-        <Element className='w-full' name='speciality'>
-          <Speciality />
-        </Element>
-      </div>
-      <Element className='w-full' name='values'>
-        <Values />
+      <Element className='w-full' name='home'>
+        <Intro />
       </Element>
       <Element className='w-full' name='overview'>
         <Services />
+      </Element>
+      <Element className='w-full' name='values'>
+        <Values />
       </Element>
       <Element className='w-full' name='servicesList'>
         <ServicesList />

@@ -1,5 +1,5 @@
 import React from 'react'
-import stackboxes from "../../assets/images/stackboxes.png"
+import services from "../../assets/illustrations/services.svg"
 
 const Intro = () => {
     return (
@@ -9,7 +9,7 @@ const Intro = () => {
                 <p className='text-lg'>Give your business a unique logo to stand out from crowd. We’ll create logo specifically for your company.</p>
             </div>
             <div className='w-full lg:w-1/2 flex justify-center h-full relative'>
-                <img src={stackboxes} className='absolute top-10 scale-[1.3]' alt="" />
+                <img src={services} className='' alt="" />
             </div>
         </div>
     )

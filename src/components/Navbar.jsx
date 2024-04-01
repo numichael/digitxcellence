@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
 import { Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { scroller } from 'react-scroll'
@@ -108,8 +108,23 @@ const Navbar = () => {
         }
     }
 
+    const [visibleMobileMenu, toggleMobileMenu] = useState(false)
+
     return (
         <div className={`w-full flex flex-col items-center`}>
+            <div className={`bg-white w-full fixed top-0 left-0 p-3 ${visibleMobileMenu ? "h-screen border-r border-#333" : "h-10"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu? "opacity-1": !visible && visibleMobileMenu? "opacity-1": "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
+                <FontAwesomeIcon icon={faBars} className='text-lg' onClick={() => toggleMobileMenu(!visibleMobileMenu)} />
+                <div className={`bg-white w-full flex flex-col pl-6 justify-evenly h-full transition-all duration-500 ${visibleMobileMenu ? "opacity-1" : "opacity-0"}`}>
+                    {
+                        tabs.map((tab, index) => (
+                            <div className='text-2xl font-semibold'>
+                                {tab.name}
+                            </div>
+                        ))
+                    }
+                    <div className='text-2xl font-semibold'>Contact</div>
+                </div>
+            </div>
             <div className={`w-full ${visible ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] hidden lg:flex justify-center fixed top-0 bg-white`}>
                 <div className="w-full max-w-[90rem] p-8 flex items-center justify-center">
                     <div className="w-[30%]">

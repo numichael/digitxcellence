@@ -14,9 +14,9 @@ import propertymataaz3 from "../../assets/images/propertymataaz3.png"
 
 const Projects = () => {
     const projects = [
-        { name: "Calabar Tech Community", images: [calabartech1, calabartech2, calabartech3], about: "Branding, Website, App", link: "https://calabartechcommunity.com/" },
-        { name: "Property Mataaz", images: [propertymataaz1, propertymataaz2, propertymataaz3], about: "Branding, Website, App", link: "https://www.propertymataaz.com/" },
+        // { name: "Calabar Tech Community", images: [calabartech1, calabartech2, calabartech3], about: "Branding, Website, App", link: "https://calabartechcommunity.com/" },
         { name: "QRSweb", images: [qrs1, qrs2, qrs3], about: "Branding, Website, App", link: "https://qrsweb.com/" },
+        { name: "Property Mataaz", images: [propertymataaz1, propertymataaz2, propertymataaz3], about: "Branding, Website, App", link: "https://www.propertymataaz.com/" },
         { name: "Loading Connect", images: [lc1, lc2, lc3], about: "Branding, Website, App", link: "https://loading-connect.netlify.app/" },
     ]
     return (
