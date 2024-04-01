@@ -127,8 +127,8 @@ const Navbar = () => {
                     <div className='text-2xl font-semibold'>Contact</div>
                 </div>
             </div>
-            <div className={`w-full ${visible ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] hidden lg:flex justify-center fixed top-0 bg-white`}>
-                <div className="w-full max-w-[90rem] p-8 flex items-center justify-center">
+            <div className={`w-full ${visible ? "opacity-1 p-8" : "opacity-0 p-0"} transition-all duration-500 z-[1000] hidden lg:flex justify-center fixed top-0 bg-white`}>
+                <div className="w-full max-w-[90rem] flex items-center justify-center">
                     <div className="w-[30%]">
                         <h2 className='text-3xl font-semibold'>Digit Xcellence</h2>
                     </div>
