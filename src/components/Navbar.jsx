@@ -106,6 +106,7 @@ const Navbar = () => {
                 scroller.scrollTo(payload.split(' ')[1], { smooth: true, duration: 500 })
             }, 20);
         }
+        toggleMobileMenu(!visibleMobileMenu)
     }
 
     const [visibleMobileMenu, toggleMobileMenu] = useState(false)
@@ -117,7 +118,7 @@ const Navbar = () => {
                 <div className={`bg-white w-full flex flex-col pl-6 justify-evenly h-full transition-all duration-500 ${visibleMobileMenu ? "opacity-1" : "opacity-0"}`}>
                     {
                         tabs.map((tab, index) => (
-                            <div className='text-2xl font-semibold'>
+                            <div className='text-2xl font-semibold' onClick={() => redirectPath(tab.path)}>
                                 {tab.name}
                             </div>
                         ))
