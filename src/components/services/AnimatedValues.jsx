@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 const AnimatedValues = () => {
 
     const [services, modifyList] = useState([
-        { hovered: false, name: "Experienced Professionals", text: "With extensive industry experience and expertise acquired over many years, our team consistently delivers exceptional results for every project. Leveraging our comprehensive understanding of industry dynamics and emerging trends, we craft tailored solutions that exceed client expectations." },
-        { hovered: false, name: "Honesty", text: "In all we do, transparency and integrity shine bright, Guiding us with honesty, our actions alight. You can trust us to always be forthright, For openness and sincerity are our guiding light." },
-        { hovered: false, name: "Dedication", text: "Our dedication stands firm, promising solutions that go beyond expectations. Regardless of project size or complexity, we strive for excellence. With tailored approaches, we ensure satisfaction in every endeavor. Trust us to deliver results that surpass your vision." },
-        { hovered: false, name: "Continued Support", text: "We're dedicated to standing by your side every step of the way, offering unwavering support and guidance that extends far beyond the completion of the project, ensuring your sustained success, growth, fulfillment, and satisfaction." },
+        { image: `https://img.freepik.com/free-photo/pensive-young-female-employee-using-tablet-outside_74855-1176.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1712016000&semt=ais`,hovered: false, name: "Experienced Professionals", text: "With extensive industry experience and expertise acquired over many years, our team consistently delivers exceptional results for every project. Leveraging our comprehensive understanding of industry dynamics and emerging trends, we craft tailored solutions that exceed client expectations." },
+        { image: `https://prod.wp.cdn.aws.wfu.edu/sites/22/2023/10/iStock-1130282840.honesty.blog_.jpg`,hovered: false, name: "Honesty", text: "In all we do, transparency and integrity shine bright, Guiding us with honesty, our actions alight. You can trust us to always be forthright, For openness and sincerity are our guiding light." },
+        { image: `https://st3.depositphotos.com/7865540/12758/i/450/depositphotos_127584304-stock-photo-businessman-writing-on-blackboard.jpg`,hovered: false, name: "Dedication", text: "Our dedication stands firm, promising solutions that go beyond expectations. Regardless of project size or complexity, we strive for excellence. With tailored approaches, we ensure satisfaction in every endeavor. Trust us to deliver results that surpass your vision." },
+        { image: `https://media.istockphoto.com/id/1177089402/photo/what-is-next-handwritten-with-white-marker.jpg?s=612x612&w=0&k=20&c=QjVaEFpbPqdltLIe6Kz6F8sUBYTIgrmB2rPZ_K7Y_jI=`,hovered: false, name: "Continued Support", text: "We're dedicated to standing by your side every step of the way, offering unwavering support and guidance that extends far beyond the completion of the project, ensuring your sustained success, growth, fulfillment, and satisfaction." },
     ])
 
     const resize = (payload) => {
@@ -34,7 +34,9 @@ const AnimatedValues = () => {
                             <div className="flex h-full w-full justify-center items-center relative">
                                 <h2 className={`text-2xl text-white transition-all font-medium duration-500 ${service.hovered ? "opacity-0 absolute top-[-1000]" : "opacity-1"}`}>{service.name}</h2>
                                 {service.hovered ? <div className={`transition-all w-full h-full duration-500 ${service.hovered ? "opacity-1" : "opacity-0"}`}>
-                                    <div className="w-full h-1/2 bg-white"></div>
+                                    <div className="w-full h-1/2 bg-white">
+                                        <img className='h-full w-full' src={service.image} alt={service.name} />
+                                    </div>
                                     <div className="w-full text-white h-1/2 p-4 flex flex-col justify-evenly">
                                         <h3 className='font-medium text-xl'>{service.name}</h3>
                                         <p className='text-sm'>{service.text}</p>
