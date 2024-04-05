@@ -30,9 +30,9 @@ const News = () => {
         <div className='w-full min-h-[50rem] flex flex-col p-4 py-20 lg:px-[10rem] gap-[8rem] items-center'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[6rem]'>
                 <div className='flex flex-col items-center gap-4 lg:gap-6'>
-                    <p className="text-[0.85rem] lg:text-xl text-red-700 lg:font-semibold">What's Going On</p>
+                    <p className="text-[0.82rem] lg:text-xl text-red-700 lg:font-semibold">What's Going On</p>
                     <h2 className='text-3xl lg:text-6xl text-green-950'>Latest stories</h2>
-                    <p className="text-[0.85rem] lg:text-base  lg:w-[40rem] text-center">News From Abstrak And Around The World Of Web Design And Complete Solution of Online Digital Marketing</p>
+                    <p className="text-[0.82rem] lg:text-base  lg:w-[40rem] text-center">News From Abstrak And Around The World Of Web Design And Complete Solution of Online Digital Marketing</p>
                 </div>
             </div>
             <div className="grid lg:grid-cols-2 w-full border-b max-w-[90rem]">
@@ -45,8 +45,8 @@ const News = () => {
                                 </div>
                                 <div className="w-full lg:w-[40%] flex flex-col justify-evenly gap-4 lg:gap-0">
                                     <h3 className='text-lg lg:text-2xl font-semibold text-green-800 hover:text-green-500 transition-all'>{info.name}</h3>
-                                    <p className='text-[#3c424577] text-[0.85rem] lg-text-md'>{info.text}</p>
-                                    <h4 className='text-[0.85rem] lg:text-base font-medium text-green-700 hover:text-green-500 transition-all'>{"Learn More >"}</h4>
+                                    <p className='text-[#3c424577] text-[0.82rem] lg-text-md'>{info.text}</p>
+                                    <h4 className='text-[0.82rem] lg:text-base font-medium text-green-700 hover:text-green-500 transition-all'>{"Learn More >"}</h4>
                                 </div>
                             </div>
                             {index % 2 !== 0 ? <div className="absolute top-0 h-full lg:border-r" /> : <div />}

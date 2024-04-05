@@ -32,7 +32,7 @@ const Navbar = () => {
             ]
         },
         {
-            name: "Academy", path: "/services home", display: false, options: [
+            name: "Academy", path: "/academy home", display: false, options: [
                 { name: "option 1" },
                 { name: "option 1" },
                 { name: "option 1" },
@@ -124,7 +124,8 @@ const Navbar = () => {
                             </div>
                         ))
                     }
-                    <div className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`}>Contact</div>
+                    <div className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`}
+                    >Contact</div>
                 </div>
             </div>
             <div className={`w-full ${visible ? "opacity-1 p-8" : "opacity-0 p-0"} transition-all duration-500 z-[1000] hidden lg:flex justify-center fixed top-0 bg-white`}>
@@ -143,7 +144,7 @@ const Navbar = () => {
                                     {/* <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
                                         {
                                             tab.options.map((tab, index) => (
-                                                <div key={index} className='text-[#5b5d75] text-[0.85rem] cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
+                                                <div key={index} className='text-[#5b5d75] text-[0.82rem] cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
                                                     {tab.name}
                                                 </div>
                                             ))

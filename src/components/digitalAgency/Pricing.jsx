@@ -46,12 +46,12 @@ const Pricing = () => {
                 <div className='flex flex-col items-center gap-6'>
                     <p className="lg:text-xl text-red-700 lg:font-semibold">Pricing Plan</p>
                     <h2 className='text-3xl text-center lg:text-6xl'>We’ve built solutions for...</h2>
-                    <p className="text-[0.85rem] lg:text-lg  lg:w-[40rem] text-center">Flexible pricing options for freelancers and design teams.</p>
+                    <p className="text-[0.82rem] lg:text-lg  lg:w-[40rem] text-center">Flexible pricing options for freelancers and design teams.</p>
                 </div>
                 <div className='flex justify-center'>
                     <div className="w-[18rem] lg:w-[25rem] h-16 lg:h-20 rounded-[1rem] bg-white border border-[#d8e6eb77] flex gap-3 p-1 items-center">
-                        <button onClick={()=> switchDisplay(monthlyPricing)} autoFocus className='outline-none w-1/2 h-[90%] bg-white focus:bg-blue-500 transition-all duration-500 rounded-[1rem] focus:text-white text-[0.85rem] lg:text-md lg:font-semibold'>Billed Yearly</button>
-                        <button onClick={()=> switchDisplay(yearlyPricing)} className='outline-none w-1/2 h-[90%] bg-white focus:bg-blue-500 transition-all duration-500 rounded-[1rem] focus:text-white text-[0.85rem] lg:text-md lg:font-semibold'>Billed Monthly</button>
+                        <button onClick={()=> switchDisplay(monthlyPricing)} autoFocus className='outline-none w-1/2 h-[90%] bg-white focus:bg-blue-500 transition-all duration-500 rounded-[1rem] focus:text-white text-[0.82rem] lg:text-md lg:font-semibold'>Billed Yearly</button>
+                        <button onClick={()=> switchDisplay(yearlyPricing)} className='outline-none w-1/2 h-[90%] bg-white focus:bg-blue-500 transition-all duration-500 rounded-[1rem] focus:text-white text-[0.82rem] lg:text-md lg:font-semibold'>Billed Monthly</button>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-8'>
@@ -62,14 +62,14 @@ const Pricing = () => {
                                     <h3 className='text-blue-600 text-3xl lg:text-[2.5rem] text-center'>{price.name}</h3>
                                     <p className="text-center">{price.about}</p>
                                 </div>
-                                <span className='flex items-end justify-center'><h2 className='text-4xl lg:text-7xl'>${price.price}</h2><span className='text-[#525b5e77] text-[0.85rem] lg:text-md pb-2 font-semibold'>{price.price > 100? "/year": "/month"}</span></span>
-                                <button className='p-6 lg:p-8 border font-semibold text-[0.85rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
+                                <span className='flex items-end justify-center'><h2 className='text-4xl lg:text-7xl'>${price.price}</h2><span className='text-[#525b5e77] text-[0.82rem] lg:text-md pb-2 font-semibold'>{price.price > 100? "/year": "/month"}</span></span>
+                                <button className='p-6 lg:p-8 border font-semibold text-[0.82rem] lg:text-lg border-[#525b5e77] rounded-[1.8rem] mx-10'>Get Started Today</button>
                                 <div className='flex flex-col gap-4 px-4 text-[#3c424577] font-semibold'>
                                     {
                                         price.features.map((feature, index)=> (
                                             <div key={index} className='flex gap-4 items-center'>
                                                 <FontAwesomeIcon icon={faCheck}/>
-                                                <p className='text-[0.85rem] lg:text-md'>{feature}</p>
+                                                <p className='text-[0.82rem] lg:text-md'>{feature}</p>
                                             </div>
                                         ))
                                     }

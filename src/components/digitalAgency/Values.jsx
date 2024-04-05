@@ -17,7 +17,7 @@ const Values = ({ digitalAgency = false }) => {
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">Our Values</p>
                     <h2 className="text-3xl lg:text-6xl text-green-900">Why should you work with us?</h2>
-                    {digitalAgency ? <p className="text-[0.85rem] lg:text-lg font-semibold text-green-900">Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu imperdiet.</p> : null}
+                    {digitalAgency ? <p className="text-[0.82rem] lg:text-lg font-semibold text-green-900">Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu imperdiet.</p> : null}
                 </div>
                 <div className="grid lg:grid-cols-3 justify-center">
                     {
@@ -27,7 +27,7 @@ const Values = ({ digitalAgency = false }) => {
                                 <div className={`w-[3.5rem] h-[3.5rem] lg:w-[5.5rem] lg:h-[5.5rem] text-5xl rounded-full border flex justify-center items-center bg-gradient-to-r from-[#e0facf] to bg-[#fff] text-green-900`}>{index + 1}</div>
                                 <div className="flex flex-col gap-4 lg:gap-10">
                                     <h3 className={`text-lg lg:text-2xl text-green-900`}>{service.name}</h3>
-                                    <p className='text-[#626161] text-[0.85rem] lg:text-md'>{service.text}</p>
+                                    <p className='text-[#626161] text-[0.82rem] lg:text-md'>{service.text}</p>
                                 </div>
                             </div>
                         ))

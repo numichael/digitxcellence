@@ -20,8 +20,8 @@ const About = () => {
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">About Us</p>
                     <h2 className='text-3xl text-green-950 lg:text-6xl'>We do design, code & develop.</h2>
                     <div className="flex flex-col gap-6">
-                        <p className="text-[0.85rem] lg:text-md">Our mission at Digit Xcellence is to empower businesses and individuals through cutting-edge digital solutions. We envision a world where every interaction is enhanced by technology, driving growth, and fostering connections.</p>
-                        <p className='text-[0.85rem] lg:text-md'>Digit Xcellence is where innovation meets expertise!</p>
+                        <p className="text-[0.82rem] lg:text-md">Our mission at Digit Xcellence is to empower businesses and individuals through cutting-edge digital solutions. We envision a world where every interaction is enhanced by technology, driving growth, and fostering connections.</p>
+                        <p className='text-[0.82rem] lg:text-md'>Digit Xcellence is where innovation meets expertise!</p>
                     <button type='button' className={`hidden lg:block p-3 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg`}>Book a free consultation</button>
                     </div>
                 </div>

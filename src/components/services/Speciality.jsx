@@ -11,9 +11,9 @@ const Speciality = () => {
     return (
         <div className='w-full min-h-[30rem] max-h-[50rem] pt-[10rem]  pb-[10rem]  px-4 gap-10 lg:max-w-[90rem] flex flex-col lg:flex-row justify-center items-center'>
             <div className='w-full lg:w-1/2 flex flex-col gap-5 lg:gap-10'>
-                <p className='text-[0.85rem] lg:text-xl lg:font-semibold text-red-700'>Experts in field</p>
+                <p className='text-[0.82rem] lg:text-xl lg:font-semibold text-red-700'>Experts in field</p>
                 <h2 className='text-3xl lg:text-6xl'>What makes us special?</h2>
-                <p className='text-[0.85rem] lg:text-lg'>In vel varius turpis, non dictum sem. Aenean in efficitur ipsum, in egestas ipsum. Mauris in mi ac tellus.</p>
+                <p className='text-[0.82rem] lg:text-lg'>In vel varius turpis, non dictum sem. Aenean in efficitur ipsum, in egestas ipsum. Mauris in mi ac tellus.</p>
                 <div>
                     <button className='bg-blue-600 rounded-[1rem] p-6 px-16 text-white'>
                         Get Started

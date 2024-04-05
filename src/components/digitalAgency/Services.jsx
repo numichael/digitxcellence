@@ -17,7 +17,7 @@ const Services = ({ digitalAgency = false }) => {
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">What We Can Do For You</p>
                     <h2 className={`text-3xl lg:text-6xl text-green-950`}>Services we can help you with</h2>
-                    {digitalAgency ? <p className="text-[0.85rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. With a team of seasoned professionals dedicated to crafting exceptional digital solutions, we offer a comprehensive suite of services tailored to meet your every need.</p> : null}
+                    {digitalAgency ? <p className="text-[0.82rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. With a team of seasoned professionals dedicated to crafting exceptional digital solutions, we offer a comprehensive suite of services tailored to meet your every need.</p> : null}
                 </div>
                 <div className="flex justify-center">
                     <div className="grid justify-center gap-[3rem] max-w-[70rem]">
@@ -26,7 +26,7 @@ const Services = ({ digitalAgency = false }) => {
                                 <div className={`relative flex flex-col-reverse ${index % 2 === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} border-t-[3px] border-r-[3px] transition-all duration-500 border-transparent hover:border-green-700 hover:scale-[1.05] rounded-lg p-8 lg:h-[27rem] gap-[8rem] w-full justify-between`}>
                                     <div className="flex flex-col gap-4 lg:gap-8 w-full lg:w-1/2 items-start justify-center">
                                         <h3 className='text-2xl font-semibold text-green-700'>{service.name}</h3>
-                                        <p className='text-[0.85rem] lg:text-md'>{service.text}</p>
+                                        <p className='text-[0.82rem] lg:text-md'>{service.text}</p>
                                         <button type='button' className='p-3 outline-none border border-green-700 hover:bg-green-700 hover:text-white transition-all duration-500 text-green-700 font-medium rounded-lg'>Learn More</button>
                                     </div>
                                     <div className="w-full lg:w-1/2">

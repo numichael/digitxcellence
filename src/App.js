@@ -4,6 +4,7 @@ import Main from "./components/digitalAgency/Main";
 import CreativeAgency from "./components/creativeAgency/Main";
 import CompanyServices from "./components/services/Main";
 import { useEffect } from "react";
+import Academy from "./components/academy/Main";
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
     if (location.pathname === "/") {
       navigate("home")
     }
-  },[location])
-  
+  }, [location])
+
   return (
     <div className="App w-full flex justify-center text-gray-900 overflow-x-hidden">
       <Routes>
@@ -22,6 +23,7 @@ function App() {
           <Route path="home" element={<Main />} />
           <Route path="creative-agency" element={<CreativeAgency />} />
           <Route path="services" element={<CompanyServices />} />
+          <Route path="academy" element={<Academy />} />
         </Route>
       </Routes>
     </div>

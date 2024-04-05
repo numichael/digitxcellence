@@ -12,9 +12,9 @@ const Testimonial = () => {
         <div className='w-full flex p-4 py-20 lg:p-[10rem] justify-center'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[4rem] justify-center'>
                 <div className='flex flex-col gap-8 w-full lg:w-[55%]'>
-                    <p className="text-[0.85rem] lg:text-xl text-red-700 lg:font-semibold">Testimonial</p>
+                    <p className="text-[0.82rem] lg:text-xl text-red-700 lg:font-semibold">Testimonial</p>
                     <h2 className='text-3xl lg:text-6xl text-green-950'>From getting started</h2>
-                    <p className='text-[0.85rem] lg:text-lg'>Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p>
+                    <p className='text-[0.82rem] lg:text-lg'>Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p>
                 </div>
                 <div className="grid lg:grid-cols-3 gap-6">
                     {
@@ -22,14 +22,14 @@ const Testimonial = () => {
                             <div key={index} className='flex flex-col gap-6 lg:gap-8 py-8 lg:pb-16 transition-all duration-500 cursor-pointer border border-b-4 border-b-green-700 border-t border-white hover:border-t-green-700'>
                                 <div className='grid'>
                                     <p className='text-6xl text-green-700'>''</p>
-                                    <i className='text-[0.85rem] lg:text-[1rem]'>"{testimonial.text}"</i>
+                                    <i className='text-[0.82rem] lg:text-[1rem]'>"{testimonial.text}"</i>
                                 </div>
                                 
                                 <div className='flex gap-6 items-center'>
                                     <img className="w-12 h-12 lg:w-14 lg:h-14 rounded-full" src={testimonial.userImage} />
                                     <div className='flex flex-col'>
                                         <h4 className='font-medium text-green-700'>{testimonial.name}</h4>
-                                        <p className='text-[0.85rem] text-[#888686]'>{testimonial.role}</p>
+                                        <p className='text-[0.82rem] text-[#888686]'>{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
