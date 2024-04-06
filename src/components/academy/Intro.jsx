@@ -6,7 +6,7 @@ const Intro = () => {
       <div className="bg-black opacity-[40%] absolute w-full h-full top-0 right-0 z-[5]"></div>
       <img src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?cs=srgb&dl=pexels-min-an-853168.jpg&fm=jpg" className="opacity-[90%] absolute w-full h-full max-h-[30rem] lg:max-h-[50rem] top-0 left-0" alt="" />
       <div className="w-full h-full flex justify-center items-center text-white">
-      <h2 className='z-10 text-2xl lg:text-4xl font-medium'>Accelerate your career in tech</h2>
+      <h2 className='z-10 text-2xl lg:text-4xl font-medium text-center'>Accelerate your career in tech</h2>
       </div>
       <div className="hidden lg:flex w-full absolute left-0 h-[12rem] bottom-[-30%] transform translate-y-[-50%] gap-[8rem] z-10 justify-center items-center bg-transparent">
         <div className="w-1/2 max-w-[25rem] h-full flex flex-col justify-evenly bg-white rounded-md border -mr-6 p-4">
