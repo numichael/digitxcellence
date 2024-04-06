@@ -42,7 +42,7 @@ const Projects = () => {
                                         <h3 className='text-xl lg:text-3xl text-green-800'>{project.name}</h3>
                                         <p className='text-[0.82rem] lg:text-base'>{project.about}</p>
                                     </div>
-                                    <button type='button' className='p-3 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg'>View Project</button>
+                                    <button type='button' className='normalButton'>View Project</button>
                                 </a>
                             ))
                         }

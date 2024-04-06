@@ -11,3 +11,7 @@
 .blur-border {
     backdrop-filter: blur(12px); 
 }
+
+.normalButton {
+    @apply bg-green-700 text-[0.85rem] rounded-md p-3 text-white hover:bg-green-900 transition-all duration-500 hover:scale-105 font-medium
+}
