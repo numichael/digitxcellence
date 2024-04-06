@@ -20,14 +20,14 @@ const Programs = () => {
             <div className='w-full flex flex-col lg:max-w-[70rem] gap-[1rem] items-center'>
                 <h2 className='text-center text-2xl font-semibold text-green-900'>Find your Perfect Program</h2>
                 <p className='text-center text-[0.82rem] pb-[2rem]'>Our curriculum uses a project-based learning approach and is perfect for both beginners and experienced individuals.</p>
-                <div className="w-full grid lg:grid-cols-3 gap-6">
+                <div className="w-full flex flex-wrap gap-6 justify-center">
                     {
                         programs.map((program, index) => (
-                            <div key={index} className={`mb-6 cursor-pointer border w-full transition-all duration-500 h-[30rem] relative`}>
+                            <div key={index} className={`mb-6 cursor-pointer rounded-md border w-[20rem] transition-all duration-500 h-[30rem] relative`}>
                                 <div className="flex h-full w-full justify-center items-center relative">
                                     <div className={`transition-all w-full h-full duration-500`}>
                                         <div className="w-full h-1/2 bg-white">
-                                            <img className='h-full w-full' src={program.image} alt={program.name} />
+                                            <img className='h-full w-full rounded-t-md' src={program.image} alt={program.name} />
                                         </div>
                                         <div className="w-full h-1/2 p-4 flex flex-col justify-between">
                                             <h3 className='font-medium text-lg text-green-700'>{program.name}</h3>

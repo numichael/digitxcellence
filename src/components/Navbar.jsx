@@ -115,7 +115,7 @@ const Navbar = () => {
         <div className={`w-full flex flex-col items-center`}>
             <div className={`bg-white w-full fixed top-0 left-0 p-3 ${visibleMobileMenu ? "h-screen border-r border-#333" : "h-10"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu? "opacity-1": !visible && visibleMobileMenu? "opacity-1": "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
                 <FontAwesomeIcon icon={faBars} className='text-lg' onClick={() => toggleMobileMenu(!visibleMobileMenu)} />
-                <div className={`bg-white w-full flex flex-col pl-6 justify-evenly h-full transition-all duration-500 ${visibleMobileMenu ? "opacity-1" : "opacity-0 h-0"}`}>
+                <div className={`bg-white w-full flex flex-col pl-6 justify-evenly h-full transition-all duration-500 ${visibleMobileMenu ? "opacity-1" : "opacity-0 h-0 mt-[-10rem]"}`}>
                     <h2 className={`text-green-700 text-4xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath("/home home")}>Digit Xcellence</h2>
                     {
                         tabs.map((tab, index) => (
