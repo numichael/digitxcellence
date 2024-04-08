@@ -5,6 +5,7 @@ import CreativeAgency from "./components/creativeAgency/Main";
 import CompanyServices from "./components/services/Main";
 import { useEffect } from "react";
 import Academy from "./components/academy/Main";
+import ProgramDetails from "./components/academy/ProgramDetails";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="creative-agency" element={<CreativeAgency />} />
           <Route path="services" element={<CompanyServices />} />
           <Route path="academy" element={<Academy />} />
+          <Route path="/program-details" element={<ProgramDetails />} />
         </Route>
       </Routes>
     </div>

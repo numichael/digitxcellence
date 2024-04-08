@@ -27,7 +27,7 @@ const Services = ({ digitalAgency = false }) => {
                 <div className="flex justify-center">
                     <div className="grid justify-center gap-[3rem] max-w-[70rem]">
                         {services.map((service, index) => (
-                            <div className={`relative flex flex-col-reverse ${index % 2 === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} border-t-[3px] border-r-[3px] transition-all duration-500 border-transparent hoveredCard rounded-lg p-8 lg:h-[27rem] gap-[8rem] w-full justify-between`}>
+                            <div key={index} className={`relative flex flex-col-reverse ${index % 2 === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} border-t-[3px] border-r-[3px] transition-all duration-500 border-transparent hoveredCard rounded-lg p-8 lg:h-[27rem] gap-[8rem] w-full justify-between`}>
                                 <div className="flex flex-col gap-4 lg:gap-4 w-full lg:w-1/2 items-start justify-center">
                                     <h3 className='text-2xl font-semibold text-green-700'>{service.name}</h3>
                                     <p className='text-[0.82rem] lg:text-md'>{service.text}</p>

@@ -119,7 +119,7 @@ const Navbar = () => {
                     <h2 className={`text-green-700 text-4xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath("/home home")}>Digit Xcellence</h2>
                     {
                         tabs.map((tab, index) => (
-                            <div className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath(tab.path)}>
+                            <div key={index} className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath(tab.path)}>
                                 {tab.name}
                             </div>
                         ))
