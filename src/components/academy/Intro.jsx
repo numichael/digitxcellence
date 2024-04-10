@@ -2,9 +2,9 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className='w-full h-screen max-h-[22rem] lg:max-h-[55rem] relative'>
+    <div className='w-full h-screen max-h-[18rem] lg:max-h-[55rem] relative'>
       <div className="bg-black opacity-[40%] absolute w-full h-full top-0 right-0 z-[5]"></div>
-      <img src="https://obsidi.com/wp-content/uploads/2022/04/black-tech-professional-businessman.jpg" className="bg-green-200 absolute w-full h-full max-h-[22rem] lg:max-h-[55rem] top-0 left-0" alt="" />
+      <img src="https://obsidi.com/wp-content/uploads/2022/04/black-tech-professional-businessman.jpg" className="bg-green-200 absolute w-full h-full max-h-[18rem] lg:max-h-[55rem] top-0 left-0" alt="" />
       <div className="w-full h-full flex justify-center items-center text-white">
       <h2 className='z-10 text-2xl lg:text-4xl font-medium text-center'>Accelerate your career in tech</h2>
       </div>

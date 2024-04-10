@@ -128,10 +128,10 @@ const ProgramDetails = () => {
                     </div>
                 </div>
                 <div className="w-full flex p-4 py-20 lg:p-[4rem] justify-center text-[0.85rem] bg-green-900 text-white">
-                    <div className='w-full flex flex-col lg:flex-row lg:max-w-[90rem] gap-[4rem] justify-evenly items-center max-w-[90rem]'>
+                    <div className='w-full flex flex-wrap lg:max-w-[90rem] gap-[4rem] justify-evenly items-center max-w-[90rem]'>
                         {
                             details?.expectations?.map((expectation, index) => (
-                                <div key={index} className="flex flex-col gap-4 items-center">
+                                <div key={index} className="flex flex-col gap-4 items-center w-[14rem]">
                                     <i className={`${expectation?.icon} text-gray-200 text-[2rem]`}></i>
                                     <p className='text-base font-medium'>{expectation?.name}</p>
                                     <p className='text-[0.8rem] text-center'>{expectation?.text}</p>
