@@ -52,7 +52,7 @@ const Programs = () => {
                 {text: "Get useful support from our team all round the clock",name: "Real Time Support",icon: "fa-solid fa-headset"},
                 {text: "Become part of an ever-growing, supportive community of like minds",name: "Team Building",icon: "fa-solid fa-users"},
                 {text: "Our classes and the environment is serene and conducive for learning.",name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
@@ -112,7 +112,7 @@ const Programs = () => {
                 {name: "24/7 Support",icon: "fa-solid fa-headset"},
                 {name: "Team Building",icon: "fa-solid fa-users"},
                 {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
@@ -171,7 +171,7 @@ const Programs = () => {
                 {name: "24/7 Support",icon: "fa-solid fa-headset"},
                 {name: "Team Building",icon: "fa-solid fa-users"},
                 {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
@@ -231,7 +231,7 @@ const Programs = () => {
                 {name: "24/7 Support",icon: "fa-solid fa-headset"},
                 {name: "Team Building",icon: "fa-solid fa-users"},
                 {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
@@ -291,7 +291,7 @@ const Programs = () => {
                 {name: "24/7 Support",icon: "fa-solid fa-headset"},
                 {name: "Team Building",icon: "fa-solid fa-users"},
                 {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
@@ -351,7 +351,7 @@ const Programs = () => {
                 {name: "24/7 Support",icon: "fa-solid fa-headset"},
                 {name: "Team Building",icon: "fa-solid fa-users"},
                 {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
-            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+            ], requiredLevel: "Beginner - Intermediate", cost: 500000, prerequisites: ['A laptop',
                 'A computer on which you can install software (Windows, MacOS, or Linux)',
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
