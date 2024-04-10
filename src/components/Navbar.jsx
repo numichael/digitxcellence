@@ -55,15 +55,15 @@ const Navbar = () => {
         //         { name: "Coming Soon" },
         //     ]
         // },
-        {
-            name: "Blog", path: "/services home", display: false, options: [
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-            ]
-        }
+        // {
+        //     name: "Blog", path: "/services home", display: false, options: [
+        //         { name: "option 1" },
+        //         { name: "option 1" },
+        //         { name: "option 1" },
+        //         { name: "option 1" },
+        //         { name: "option 1" },
+        //     ]
+        // }
     ])
 
     const toggleOptions = (payload) => {

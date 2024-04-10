@@ -1,11 +1,63 @@
 import React from 'react'
+import { scroller } from 'react-scroll'
 import { useNavigate } from 'react-router-dom'
 
 const Programs = () => {
 
     const programs = [
         {
-            applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://usa.bootcampcdn.com/wp-content/uploads/sites/106/2020/07/CDG_blog_post_image_08.jpg", schedule: "Four times a week", name: "FullStack Web Development",
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+              
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {text: "You’ll be taught and mentored by some of the best teachers in the industry.",name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {text: "Get your very own physical certificate to prove your participation",name: "Certification",icon: "fa-solid fa-certificate"},
+                {text: "Get useful support from our team all round the clock",name: "Real Time Support",icon: "fa-solid fa-headset"},
+                {text: "Become part of an ever-growing, supportive community of like minds",name: "Team Building",icon: "fa-solid fa-users"},
+                {text: "Our classes and the environment is serene and conducive for learning.",name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://usa.bootcampcdn.com/wp-content/uploads/sites/106/2020/07/CDG_blog_post_image_08.jpg", schedule: "Four times a week", name: "FullStack Web Development",
             text: `Are you prepared to embark on an exciting journey into the multifaceted realm of full-stack development? Our comprehensive
            Full-Stack Development Course is your ticket to unlocking a wealth of opportunities in the
             dynamic world of software engineering. From front-end aesthetics to back-end functionality,
@@ -14,7 +66,58 @@ const Programs = () => {
                of web development or a seasoned professional looking to expand your skill set,
                 our course provides the perfect platform for your advancement and success.` },
         {
-            applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://images.remotehub.com/48fa1a30893411eab1aeea9219b4118a/original_thumb/4724af97.png?version=1588066827", schedule: "Four times a week", name: "Backend Web Development",
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+               
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {name: "Certification",icon: "fa-solid fa-certificate"},
+                {name: "24/7 Support",icon: "fa-solid fa-headset"},
+                {name: "Team Building",icon: "fa-solid fa-users"},
+                {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://images.remotehub.com/48fa1a30893411eab1aeea9219b4118a/original_thumb/4724af97.png?version=1588066827", schedule: "Four times a week", name: "Backend Web Development",
             text: `Craft and deploy robust web applications and apps with the versatility of backend 
          languages. Harness their innate security features to ensure the creation of safe and reliable web applications.
           Explore the potential of backend languages to build scalable solutions tailored to modern web development demands.
@@ -22,7 +125,58 @@ const Programs = () => {
            With a solid grasp of backend languages, unlock the ability to create innovative web experiences.
           Join us as we delve into the exciting world of backend languages and their transformative impact on web development.` },
         {
-            applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png", schedule: "Four times a week", name: "Frontend Web Development with React JS",
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+              
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {name: "Certification",icon: "fa-solid fa-certificate"},
+                {name: "24/7 Support",icon: "fa-solid fa-headset"},
+                {name: "Team Building",icon: "fa-solid fa-users"},
+                {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/5928299/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png", schedule: "Four times a week", name: "Frontend Web Development with React JS",
             text: `Embark on your career as a Front-End Web Developer today.
           Discover the art of building top-notch websites and dynamic applications to captivate users.
            Gain expertise in creating seamless user experiences that leave a lasting impact.
@@ -31,7 +185,58 @@ const Programs = () => {
              Join a community of like-minded individuals and expand your horizons in the ever-evolving field of web development.
           Start your ascent towards excellence in Front-End Development and carve your path to success.` },
         {
-            applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://tortoiseandharesoftware.com/wp-content/uploads/2020/09/WordPress-Design-Considerations-768x401.jpg", schedule: "Four times a week", name: "Web Development (No code)",
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+                
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {name: "Certification",icon: "fa-solid fa-certificate"},
+                {name: "24/7 Support",icon: "fa-solid fa-headset"},
+                {name: "Team Building",icon: "fa-solid fa-users"},
+                {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://tortoiseandharesoftware.com/wp-content/uploads/2020/09/WordPress-Design-Considerations-768x401.jpg", schedule: "Four times a week", name: "Web Development (No code)",
             text: `Embark on the exciting journey of web development without needing to code.
          Explore the world of no-code development and unlock the ability to create stunning websites and applications effortlessly.
           With intuitive tools and platforms at your disposal, dive into the realm of web development with ease.
@@ -39,8 +244,60 @@ const Programs = () => {
            Let your creativity flourish as you design and customize your digital creations to perfection.
             Join the growing community of no-code enthusiasts and revolutionize the way you approach web development.
          Start your no-code journey today and witness the limitless possibilities of creating without boundaries.` },
-        { applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://img.etimg.com/thumb/width-640,height-480,imgsize-20302,resizemode-75,msid-100298720/jobs/c-suite/a-day-in-the-life-of-a-product-manager-what-to-expect.jpg", schedule: "Four times a week", name: "Coding class for kids (Age 4+)",
-         text: `
+        {
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+               
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {name: "Certification",icon: "fa-solid fa-certificate"},
+                {name: "24/7 Support",icon: "fa-solid fa-headset"},
+                {name: "Team Building",icon: "fa-solid fa-users"},
+                {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://img.etimg.com/thumb/width-640,height-480,imgsize-20302,resizemode-75,msid-100298720/jobs/c-suite/a-day-in-the-life-of-a-product-manager-what-to-expect.jpg", schedule: "Four times a week", name: "Coding class for kids (Age 4+)",
+            text: `
          Introduce your child to the world of coding with our interactive coding class designed for kids aged 4 and above.
           Watch as your young learner discovers the fundamentals of programming in a fun and engaging environment.
            With age-appropriate activities and games, we make learning to code a playful and enjoyable experience.
@@ -48,13 +305,62 @@ const Programs = () => {
              Our experienced instructors provide personalized guidance, ensuring that every child progresses at their own pace. 
              Join us in nurturing the next generation of coders and innovators.
           Enroll your child in our coding class today and lay the foundation for a bright future in technology.` },
-        { applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months", image: "https://miro.medium.com/v2/resize:fit:702/1*Ra02AqsQlC0KV229EvM98g.png", schedule: "Four times a week", name: "Mobile Development", 
-        text: `
-        Enter the dynamic realm of mobile development and unleash your potential in creating innovative apps for smartphones and tablets.
-         Whether you're new or experienced, our resources cater to all levels of expertise. Explore cutting-edge technologies and trends,
-          from native to cross-platform solutions. Join a lively community of mobile enthusiasts and collaborate on exciting projects.
-           With our support, transform your app ideas into reality and leave a lasting mark in the mobile landscape.
-         Start your mobile development journey today and become a force in shaping the future of mobile technology.` },
+        {
+            courseDetails: [
+                {
+                    children: [
+                        { textHeader: "", text: "Full-stack development is the art of creating web applications that seamlessly integrate both the client-side (frontend) and server-side (backend) components. In this course, you’ll dive deep into the world of web development, learning how to build visually stunning user interfaces and robust server-side functionality." },
+                    ],
+                    clicked: false, name: "About the course"
+                },
+                {
+                    children: [
+                        { textHeader: "Comprehensive Curriculum", text: "Our course is designed to provide you with a well-rounded education, covering all essential aspects of full-stack development, from the fundamentals of HTML, CSS, and JavaScript to server-side scripting, databases, and server deployment." },
+                        { textHeader: "Real-World Projects", text: "You won’t just learn theory; you’ll apply your skills to real-world projects that mimic scenarios you’ll encounter in the industry." },
+                        { textHeader: "Experienced Instructors", text: "Our instructors are industry professionals with years of experience in web development. They’ll guide you through every step of the learning process." },
+                        { textHeader: "Job-Ready Skills", text: "By the end of this course, you’ll have a portfolio of projects and the skills needed to pursue a career in web development or even launch your own web-based startup." },
+                        { textHeader: "", text: "Discussion and Networking with classmates" }
+                    ],
+                    clicked: false, name: "Why choose this course"
+                },
+                {
+                    children: [
+                        { textHeader: "", text: "A computer on which you can install software (Windows, MacOS, or Linux)" },
+                        { textHeader: "", text: "Basic computer skills" },
+                        { textHeader: "", text: "Introduction to software development" },
+                        { textHeader: "", text: "Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)" },
+                    ],
+                    clicked: false, name: "Prerequisites"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Course Outline"
+                },
+                {
+                    children: [
+
+                    ],
+                    clicked: false, name: "Class Schedule"
+                },
+            ],
+            projects: 5, startDate: "15th April, 2024",expectations: [
+                {name: "Experienced Teachers",icon: "fa-solid fa-person-chalkboard"},
+                {name: "Certification",icon: "fa-solid fa-certificate"},
+                {name: "24/7 Support",icon: "fa-solid fa-headset"},
+                {name: "Team Building",icon: "fa-solid fa-users"},
+                {name: "Conducive Environment",icon: "fa-solid fa-seedling"},
+            ], requiredLevel: "Beginner to Intermediate", cost: 500000, prerequisites: ['A laptop',
+                'A computer on which you can install software (Windows, MacOS, or Linux)',
+                'Basic computer skills',
+                'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
+                , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
+            image: "https://miro.medium.com/v2/resize:fit:702/1*Ra02AqsQlC0KV229EvM98g.png", schedule: "Four times a week", name: "Mobile Development",
+            text: `Start your career as a Mobile App Developer today. Discover the intricacies of building engaging apps that captivate users. Acquire skills in crafting
+             seamless user experiences that leave a lasting impact. Immerse yourself in the world of Mobile App Development to unleash your creativity and drive innovation.
+              Let your passion and dedication steer your journey forward. Join a supportive community of developers
+             and expand your horizons in the dynamic field of app development. Begin your quest for excellence in Mobile App Development and pave the way to a successful future.            ` },
 
     ]
     const navigate = useNavigate()
@@ -62,6 +368,9 @@ const Programs = () => {
         payload = JSON.stringify(payload)
         sessionStorage.setItem('programDetails', payload)
         navigate("/program-details")
+        setTimeout(() => {
+            scroller.scrollTo("home", { smooth: true, duration: 500 })
+        }, 20);
     }
 
     return (
@@ -80,7 +389,7 @@ const Programs = () => {
                                         </div>
                                         <div className="w-full h-1/2 p-4 flex flex-col justify-between">
                                             <h3 className='font-medium text-lg text-green-700'>{program.name}</h3>
-                                            <p className='text-[0.82rem]'>{program.text.length > 220 ? program.text.slice(0,215) + "...": program.text}</p>
+                                            <p className='text-[0.82rem]'>{program.text.length > 220 ? program.text.slice(0, 215) + "..." : program.text}</p>
                                             <div className="w-full flex justify-between text-[0.82rem]">
                                                 <span className='flex gap-2 items-center'>
                                                     <i className="text-green-700 fa-solid fa-calendar-days"></i>
