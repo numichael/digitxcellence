@@ -5,7 +5,7 @@ const Contact = () => {
     const profiles = [
         { style: "fa-brands fa-linkedin-in text-blue-500 border-blue-400", link: "https://www.linkedin.com/company/digitxcellence/" },
         { style: "fa-solid fa-phone text-red-500 border-red-400", link: "tel:+2348188680159" },
-        { style: "fa-brands fa-whatsapp text-green-500 border-green-400", link: "https:wa.me/+2348188680159" },
+        { style: "fa-brands fa-whatsapp text-green-500 border-green-400", link: "https://wa.me/+2348188680159" },
         { style: "fa-brands fa-instagram text-red-500 border-red-400", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=" },
         { style: "fa-brands fa-facebook-f text-blue-500 border-blue-400", link: "https://www.facebook.com/digitxcellence?mibextid=ZbWKwL" },
     ]

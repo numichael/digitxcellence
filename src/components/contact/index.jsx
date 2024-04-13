@@ -3,7 +3,7 @@ import { Element } from 'react-scroll'
 const ContactPage = () => {
 
     const contacts = [
-        { name: "Whatsapp", link: "https:wa.me/+2348188680159", availability: "Chat with us during operation hours", icon: "fa-brands fa-whatsapp" },
+        { name: "Whatsapp", link: "https://wa.me/+2348188680159", availability: "Chat with us during operation hours", icon: "fa-brands fa-whatsapp" },
         { name: "Phone", link: "tel:+2348188680159", availability: "Contact our agent via phone calls for enquiry", icon: "fa-solid fa-phone" },
         { name: "Instagram", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=", availability: "Our Instagram page", icon: "fa-brands fa-instagram" },
         { name: "Linkedin", link: "https://www.linkedin.com/company/digitxcellence/", availability: "Our Linkedin profile", icon: "fa-brands fa-linkedin-in" },

@@ -34,16 +34,16 @@ const Projects = () => {
                         {
                             projects.map((project, index) => (
                                 <a href={project.link} target='_blank' key={index} className='cursor-pointer w-full lg:h-[45rem]'>
-                                    <div className="relative w-full h-[80%] flex gap-4 justify-center">
-                                        <div className="flex flex-col gap-4 w-[35%] h-full">
+                                    <div className="relative w-full h-[80%] flex gap-2 lg:gap-4 justify-center">
+                                        <div className="flex flex-col gap-2 lg:gap-4 w-[35%] h-full">
                                             <img src={project.images[0]} className='w-full h-full border' alt="Your Image" />
                                         </div>
-                                        <div className="flex flex-col gap-4 w-[50%] h-full">
+                                        <div className="flex flex-col gap-2 lg:gap-4 w-[50%] h-full">
                                             <img src={project.images[1]} className='w-full border h-1/2' alt="Your Image" />
                                             <img src={project.images[2]} className='w-full border h-1/2' alt="Your Image" />
                                         </div>
                                     </div>
-                                    <div className="p-10 border-r-2 rounded-br-[2rem]">
+                                    <div className="p-4 lg:p-10 border-r-2 rounded-br-[2rem]">
                                         <h3 className='text-xl lg:text-3xl text-green-800'>{project.name}</h3>
                                         <p className='text-[0.82rem] lg:text-base'>{project.about}</p>
                                     </div>
