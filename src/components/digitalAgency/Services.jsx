@@ -1,4 +1,6 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
+import { scroller } from 'react-scroll'
 import softwareengineering from "../../assets/illustrations/softwareengineering.svg"
 import webdesign from "../../assets/illustrations/webdesign.svg"
 import marketing from "../../assets/illustrations/marketing.svg"
@@ -6,13 +8,20 @@ import academy from "../../assets/illustrations/academy.svg"
 import design from "../../assets/illustrations/design.svg"
 
 const Services = ({ digitalAgency = false }) => {
+    const navigate = useNavigate()
+    const navigateToLink = (payload) => {
+        navigate(payload)
+        setTimeout(() => {
+            scroller.scrollTo("home", { smooth: true, duration: 500 })
+        }, 20);
+    }
 
     const services = [
-        { name: "Web Design", text: "We excel at transforming your visions into captivating digital realities, crafting visually stunning websites and ensuring user experiences are seamless. Let's collaborate and venture into uncharted digital territories together.", illustration: webdesign },
-        { name: "Software Development", text: "Unlock the potential of cutting-edge technology with our custom software solutions, crafted to transform your business. From streamlining processes to driving efficiency, we're dedicated to your digital success. Let's innovate and grow together.", illustration: softwareengineering },
-        { name: "Digital Marketing", text: "Establish a commanding online presence with our meticulously crafted, data-driven marketing strategies, perfectly tailored to your objectives. Let's unite to elevate your brand and conquer the digital landscape together.", illustration: marketing },
-        { name: "Graphics Design", text: "Stand out in the digital realm with visually striking graphics that capture attention and foster meaningful connections across platforms. Our customized approach ensures your brand shines uniquely, leaving a lasting impression and sparking lasting engagement.", illustration: design },
-        { name: "Academy", text: "Empower your team with comprehensive training in web design, software development, and digital skills, fostering innovation and excellence. Together, we'll cultivate a culture of growth, propelling your team to new heights of success in the ever-evolving digital landscape.", illustration: academy },
+        {link: "", name: "Web Design", text: "We excel at transforming your visions into captivating digital realities, crafting visually stunning websites and ensuring user experiences are seamless. Let's collaborate and venture into uncharted digital territories together.", illustration: webdesign },
+        {link: "", name: "Software Development", text: "Unlock the potential of cutting-edge technology with our custom software solutions, crafted to transform your business. From streamlining processes to driving efficiency, we're dedicated to your digital success. Let's innovate and grow together.", illustration: softwareengineering },
+        {link: "", name: "Digital Marketing", text: "Establish a commanding online presence with our meticulously crafted, data-driven marketing strategies, perfectly tailored to your objectives. Let's unite to elevate your brand and conquer the digital landscape together.", illustration: marketing },
+        {link: "", name: "Graphics Design", text: "Stand out in the digital realm with visually striking graphics that capture attention and foster meaningful connections across platforms. Our customized approach ensures your brand shines uniquely, leaving a lasting impression and sparking lasting engagement.", illustration: design },
+        {link: "/academy", name: "Academy", text: "Empower your team with comprehensive training in web design, software development, and digital skills, fostering innovation and excellence. Together, we'll cultivate a culture of growth, propelling your team to new heights of success in the ever-evolving digital landscape.", illustration: academy },
     ]
 
     return (
@@ -30,7 +39,7 @@ const Services = ({ digitalAgency = false }) => {
                                 <div className="flex flex-col gap-4 lg:gap-4 w-full lg:w-1/2 items-start justify-center">
                                     <h3 className='text-2xl font-semibold text-green-700'>{service.name}</h3>
                                     <p className='text-[0.82rem] lg:text-md'>{service.text}</p>
-                                    <button type='button' className='p-3 outline-none border border-green-700 hover:bg-green-700 hover:text-white transition-all duration-500 text-green-700 font-medium rounded-lg'>Learn More</button>
+                                    <button onClick={()=> navigateToLink(service.link)} type='button' className='p-3 outline-none border border-green-700 hover:bg-green-700 hover:text-white transition-all duration-500 text-green-700 font-medium rounded-lg'>Learn More</button>
                                 </div>
                                 <div className="w-full lg:w-1/2">
                                     <img className='w-full h-full' src={service.illustration} alt={service.name} />

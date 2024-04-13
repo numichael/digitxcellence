@@ -15,7 +15,7 @@ const Contact = () => {
             <div className='w-full flex justify-evenly lg:justify-between max-w-[30rem]'>
                 {
                     profiles.map((profile, index) => (
-                        <a href={profile.link} target='_blank'>
+                        <a href={profile.link} target='_blank' key={index}>
                             <i key={index} className={profile.style + " text-[#3c424577] text-lg lg:text-2xl cursor-pointer border-b-2 medialinks px-3 py-1 rounded-md"} ></i>
                         </a>
                     ))

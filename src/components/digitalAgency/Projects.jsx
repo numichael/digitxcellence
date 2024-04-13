@@ -19,10 +19,10 @@ const Projects = () => {
     const projects = [
         // { name: "Calabar Tech Community", images: [calabartech1, calabartech2, calabartech3], about: "Branding, Website, App", link: "https://calabartechcommunity.com/" },
         { name: "QRSweb", images: [qrs1, qrs2, qrs3], about: "Branding, Website, App", link: "https://qrsweb.com/" },
+         { name: "Zyon Technology", images: [zyon1, zyon2, zyon3], about: "Branding, Website, App", link: "https://zyontechnology.netlify.app/" },
+        { name: "TKEN", images: [tken1, tken2, tken3], about: "Branding, Website, App", link: "https://tkenonline.com/" },
         { name: "Property Mataaz", images: [propertymataaz1, propertymataaz2, propertymataaz3], about: "Branding, Website, App", link: "https://www.propertymataaz.com/" },
         { name: "Loading Connect", images: [lc1, lc2, lc3], about: "Branding, Website, App", link: "https://loading-connect.netlify.app/" },
-        { name: "Zyon Technology", images: [zyon1, zyon2, zyon3], about: "Branding, Website, App", link: "https://zyontechnology.netlify.app/" },
-        { name: "TKEN", images: [tken1, tken2, tken3], about: "Branding, Website, App", link: "https://tkenonline.com/" },
     ]
     return (
         <div className='w-full min-h-[50rem] flex p-4 py-20 lg:p-[10rem] justify-center bg-[#eeffe2]'>
