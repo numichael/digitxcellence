@@ -113,18 +113,20 @@ const Navbar = () => {
 
     return (
         <div className={`w-full flex flex-col items-center`}>
-            <div className={`bg-white w-full fixed top-0 left-0 p-3 ${visibleMobileMenu ? "h-screen border-r border-#333" : "h-10"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu? "opacity-1": !visible && visibleMobileMenu? "opacity-1": "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
-                <FontAwesomeIcon icon={faBars} className='text-lg' onClick={() => toggleMobileMenu(!visibleMobileMenu)} />
-                <div className={`bg-white w-full flex flex-col pl-6 justify-evenly h-full transition-all duration-500 ${visibleMobileMenu ? "opacity-1" : "opacity-0 h-0 mt-[-10rem]"}`}>
-                    <h2 className={`text-green-700 text-4xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath("/home home")}>Digit Xcellence</h2>
-                    {
-                        tabs.map((tab, index) => (
-                            <div key={index} className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`} onClick={() => redirectPath(tab.path)}>
-                                {tab.name}
-                            </div>
-                        ))
-                    }
-                    <div className={`text-2xl font-semibold ${visibleMobileMenu? "h-auto": "h-0"}`}
+            <div className={`fixed top-0 right-0 p-3 h-screen ${visibleMobileMenu ? "bg-white w-5/6 border-r border-#333" : "w-0 bg-transparent"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu ? "opacity-1" : !visible && visibleMobileMenu ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
+                <FontAwesomeIcon icon={faBars} className='text-xl absolute right-4' onClick={() => toggleMobileMenu(!visibleMobileMenu)} />
+                <div className={`flex flex-col pl-6 h-full py-10 transition-all duration-500 ${visibleMobileMenu ? "opacity-1 bg-white w-full" : "bg-transparent opacity-0 w-0 mt-[-10rem]"}`}>
+                    <h2 className={`text-green-700 text-4xl pb-[4rem] font-semibold ${visibleMobileMenu ? "w-auto" : "w-0"}`} onClick={() => redirectPath("/home home")}>Digit Xcellence</h2>
+                    <div className='flex flex-col gap-10 pb-10'>
+                        {
+                            tabs.map((tab, index) => (
+                                <div key={index} className={`text-xl font-semibold ${visibleMobileMenu ? "w-auto" : "w-0"}`} onClick={() => redirectPath(tab.path)}>
+                                    {tab.name}
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div onClick={() => redirectPath("/contact home")} className={`text-xl font-semibold ${visibleMobileMenu ? "w-auto" : "w-0"}`}
                     >Contact</div>
                 </div>
             </div>
@@ -138,7 +140,7 @@ const Navbar = () => {
                             tabs.map((tab, index) => (
                                 <div key={index} className="flex flex-col relative" onMouseEnter={() => toggleOptions(tab.name)} onMouseLeave={() => toggleOptions(tab.name)}>
                                     <div className='flex items-center gap-3 cursor-pointer z-10'>
-                                        <p className='text-base font-medium' onClick={() => redirectPath(tab.path)}>{tab.name}</p>
+                                        <p className='text-base font-medium border-b-2 border-transparent transition-all duration-500 hover:border-green-700' onClick={() => redirectPath(tab.path)}>{tab.name}</p>
                                         {/* <FontAwesomeIcon icon={faChevronDown} className='text-xs' /> */}
                                     </div>
                                     {/* <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
@@ -155,7 +157,7 @@ const Navbar = () => {
                             ))
                         }
                         <div className='flex items-center gap-3 cursor-pointer z-10'>
-                            <p className='text-base font-medium'>Contact</p>
+                            <p className='text-base font-medium border-b-2 border-transparent transition-all duration-500 hover:border-green-700' onClick={() => redirectPath("/contact home")}>Contact</p>
                         </div>
                     </div>
                 </div>

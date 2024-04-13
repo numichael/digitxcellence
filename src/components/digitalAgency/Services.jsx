@@ -1,5 +1,4 @@
 import React from 'react'
-import newImg from "../../assets/illustrations/new.svg"
 import softwareengineering from "../../assets/illustrations/softwareengineering.svg"
 import webdesign from "../../assets/illustrations/webdesign.svg"
 import marketing from "../../assets/illustrations/marketing.svg"
@@ -9,20 +8,20 @@ import design from "../../assets/illustrations/design.svg"
 const Services = ({ digitalAgency = false }) => {
 
     const services = [
-        { name: "Web Design", text: "With our mastery in digital craftsmanship, we breathe life into your visions, sculpting elegant websites and orchestrating mesmerizing user journeys. From pixel-perfect designs to seamless interactions, we are your partners in transforming aspirations into immersive digital experiences. Let's embark on this journey together and redefine what's possible in the digital realm.", illustration: webdesign },
-        { name: "Software Development", text: "Harness the transformative power of cutting-edge technology with our bespoke software solutions, meticulously crafted to revolutionize your business operations. From seamless process automation to unparalleled efficiency gains, we are dedicated to driving your success in the digital era. Let's embark on this journey of innovation and growth together.", illustration: softwareengineering },
-        { name: "Digital Marketing", text: "Craft a commanding digital presence and unlock tangible outcomes with our meticulously tailored, data-driven digital marketing strategies. We're dedicated to aligning every tactic with your unique business goals, ensuring your online presence resonates powerfully and delivers exceptional results. Let's collaborate to elevate your brand and drive success in the digital landscape.", illustration: marketing },
-        { name: "Graphics Design", text: "Set yourself apart as a beacon of distinction in the digital landscape with visually captivating graphics that not only seize attention but also forge profound connections across diverse platforms. Our tailored approach ensures your brand emerges uniquely amidst the competition, leaving an unforgettable impression and igniting enduring engagement.", illustration: design },
-        { name: "Academy", text: "Ignite the spark of innovation within your team through comprehensive training in web design, software development, coding for kids, and digital skills. By nurturing their talents and honing their abilities, we empower them to unleash their full potential as the driving force behind the next wave of technological advancement. Together, let's cultivate a culture of growth and excellence that propels your team to new heights of success.", illustration: academy },
+        { name: "Web Design", text: "We excel at transforming your visions into captivating digital realities, crafting visually stunning websites and ensuring user experiences are seamless. Let's collaborate and venture into uncharted digital territories together.", illustration: webdesign },
+        { name: "Software Development", text: "Unlock the potential of cutting-edge technology with our custom software solutions, crafted to transform your business. From streamlining processes to driving efficiency, we're dedicated to your digital success. Let's innovate and grow together.", illustration: softwareengineering },
+        { name: "Digital Marketing", text: "Establish a commanding online presence with our meticulously crafted, data-driven marketing strategies, perfectly tailored to your objectives. Let's unite to elevate your brand and conquer the digital landscape together.", illustration: marketing },
+        { name: "Graphics Design", text: "Stand out in the digital realm with visually striking graphics that capture attention and foster meaningful connections across platforms. Our customized approach ensures your brand shines uniquely, leaving a lasting impression and sparking lasting engagement.", illustration: design },
+        { name: "Academy", text: "Empower your team with comprehensive training in web design, software development, and digital skills, fostering innovation and excellence. Together, we'll cultivate a culture of growth, propelling your team to new heights of success in the ever-evolving digital landscape.", illustration: academy },
     ]
 
     return (
         <div className={`w-full min-h-[50rem] bg-[#eeffe2] flex justify-center px-4 py-20 lg:px-[4rem] lg:py-[10rem]`}>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[8rem]'>
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
-                    <p className="text-base lg:text-xl text-red-700 lg:font-semibold">What We Can Do For You</p>
-                    <h2 className={`text-3xl lg:text-6xl text-green-950`}>Services we can help you with</h2>
-                    {digitalAgency ? <p className="text-[0.82rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. With a team of seasoned professionals dedicated to crafting exceptional digital solutions, we offer a comprehensive suite of services tailored to meet your every need.</p> : null}
+                    <p className="text-base lg:text-xl text-red-700 lg:font-semibold">Our Services</p>
+                    <h2 className={`text-3xl lg:text-6xl text-green-950`}>What We Can Do For You</h2>
+                    {digitalAgency ? <p className="text-[0.82rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. We have a team of experienced professionals who are dedicated to creating outstanding digital solutions. We provide a complete set of services customized to meet all your needs.</p> : null}
                 </div>
                 <div className="flex justify-center">
                     <div className="grid justify-center gap-[3rem] max-w-[70rem]">

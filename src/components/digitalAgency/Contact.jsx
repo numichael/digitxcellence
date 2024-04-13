@@ -3,21 +3,21 @@ import React from 'react'
 const Contact = () => {
 
     const profiles = [
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
-        "fa-brands fa-linkedin",
+        { style: "fa-brands fa-linkedin-in text-blue-500 border-blue-400", link: "https://www.linkedin.com/company/digitxcellence/" },
+        { style: "fa-solid fa-phone text-red-500 border-red-400", link: "tel:+2348188680159" },
+        { style: "fa-brands fa-whatsapp text-green-500 border-green-400", link: "https:wa.me/+2348188680159" },
+        { style: "fa-brands fa-instagram text-red-500 border-red-400", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=" },
+        { style: "fa-brands fa-facebook-f text-blue-500 border-blue-400", link: "https://www.facebook.com/digitxcellence?mibextid=ZbWKwL" },
     ]
+
     return (
         <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4 lg:p-[3rem] bg-[#eeffe2]'>
-            <div className='w-full flex justify-evenly lg:justify-between max-w-[55rem]'>
+            <div className='w-full flex justify-evenly lg:justify-between max-w-[30rem]'>
                 {
                     profiles.map((profile, index) => (
-                        <i key={index} className={profile + " text-[#3c424577] text-lg lg:text-3xl"} ></i>
+                        <a href={profile.link} target='_blank'>
+                            <i key={index} className={profile.style + " text-[#3c424577] text-lg lg:text-2xl cursor-pointer border-b-2 medialinks px-3 py-1 rounded-md"} ></i>
+                        </a>
                     ))
                 }
             </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                             <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex flex-col lg:flex-row gap-16 justify-between">
+                    <div className="w-full flex flex-row gap-16 justify-between">
                         <div>
                             <h4 className='text-xl font-semibold mb-10 text-green-800'>Resources</h4>
                             <div className='flex flex-col gap-6 text-[0.82rem]'>

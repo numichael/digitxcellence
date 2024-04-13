@@ -32,7 +32,7 @@ const News = () => {
                 <div className='flex flex-col items-center gap-4 lg:gap-6'>
                     <p className="text-[0.82rem] lg:text-xl text-red-700 lg:font-semibold">What's Going On</p>
                     <h2 className='text-3xl lg:text-6xl text-green-950'>Latest stories</h2>
-                    <p className="text-[0.82rem] lg:text-base  lg:w-[40rem] text-center">News From Abstrak And Around The World Of Web Design And Complete Solution of Online Digital Marketing</p>
+                    <p className="text-[0.82rem] lg:text-base  lg:w-[40rem] text-center">News From Digit Xcellence And Around The World Of Web Design And Complete Solution of Online Digital Marketing</p>
                 </div>
             </div>
             <div className="grid lg:grid-cols-2 w-full border-b max-w-[90rem]">
