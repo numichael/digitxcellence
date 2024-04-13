@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { scroller } from 'react-scroll'
@@ -8,62 +8,9 @@ import { scroller } from 'react-scroll'
 const Navbar = () => {
 
     const [tabs, setTabs] = useState([
-        {
-            name: "Home", path: "/home home", display: false, options: [
-                { name: "Home", path: "/home home" },
-                { name: "About Us", path: "/home aboutus" },
-                { name: "Services", path: "/home services" },
-                { name: "Projects", path: "/home projects" },
-                { name: "Our Stats", path: "/home stats" },
-                { name: "Our Values", path: "/home values" },
-                { name: "Testimonial", path: "/home testimonial" },
-                { name: "Top Clients", path: "/home clients" },
-                { name: "Blog", path: "/home blog" },
-                { name: "Contact", path: "/home contact" },
-            ]
-        },
-        {
-            name: "Services", path: "/services home", display: false, options: [
-                { name: "All Services", path: "/services home" },
-                { name: "Speciality", path: "/services speciality" },
-                { name: "Values", path: "/services values" },
-                { name: "Services Overview", path: "/services overview" },
-                { name: "Contact", path: "/services contact" },
-            ]
-        },
-        {
-            name: "Academy", path: "/academy home", display: false, options: [
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-                { name: "option 1" },
-            ]
-        },
-        // {
-        //     name: "Pages", display: false, options: [
-        //         { name: "About Us" },
-        //         { name: "Our Office" },
-        //         { name: "Case Study" },
-        //         { name: "Case Study Details" },
-        //         { name: "Team" },
-        //         { name: "Team Details" },
-        //         { name: "Testimonial" },
-        //         { name: "Pricing Table" },
-        //         { name: "Typography" },
-        //         { name: "404 Page" },
-        //         { name: "Coming Soon" },
-        //     ]
-        // },
-        // {
-        //     name: "Blog", path: "/services home", display: false, options: [
-        //         { name: "option 1" },
-        //         { name: "option 1" },
-        //         { name: "option 1" },
-        //         { name: "option 1" },
-        //         { name: "option 1" },
-        //     ]
-        // }
+        { name: "Home", path: "/home home", display: false },
+        { name: "Services", path: "/services home", display: false },
+        { name: "Academy", path: "/academy home", display: false }
     ])
 
     const toggleOptions = (payload) => {
@@ -141,18 +88,7 @@ const Navbar = () => {
                                 <div key={index} className="flex flex-col relative" onMouseEnter={() => toggleOptions(tab.name)} onMouseLeave={() => toggleOptions(tab.name)}>
                                     <div className='flex items-center gap-3 cursor-pointer z-10'>
                                         <p className='text-base font-medium border-b-2 border-transparent transition-all duration-500 hover:border-green-700' onClick={() => redirectPath(tab.path)}>{tab.name}</p>
-                                        {/* <FontAwesomeIcon icon={faChevronDown} className='text-xs' /> */}
                                     </div>
-                                    {/* <div className={`flex z-10 flex-col border-l border-b gap-5 absolute top-6 w-[13rem] transition-all duration-500 bg-white ${tab.display ? "opacity-1 left-0 min-h-[8rem] p-4 blur-border" : "opacity-0 left-10 overflow-hidden h-[0]"}`}>
-                                        {
-                                            tab.options.map((tab, index) => (
-                                                <div key={index} className='text-[#5b5d75] text-[0.82rem] cursor-pointer font-medium' onClick={() => redirectPath(tab.path)}>
-                                                    {tab.name}
-                                                </div>
-                                            ))
-                                        }
-                                    </div> */}
-
                                 </div>
                             ))
                         }

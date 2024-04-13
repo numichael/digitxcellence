@@ -1,7 +1,6 @@
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Main from "./components/digitalAgency/Main";
-import CreativeAgency from "./components/creativeAgency/Main";
 import CompanyServices from "./components/services/Main";
 import { useEffect } from "react";
 import Academy from "./components/academy/Main";
@@ -23,7 +22,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route path="home" element={<Main />} />
-          <Route path="creative-agency" element={<CreativeAgency />} />
           <Route path="services" element={<CompanyServices />} />
           <Route path="academy" element={<Academy />} />
           <Route path="/program-details" element={<ProgramDetails />} />
