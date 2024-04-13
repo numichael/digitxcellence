@@ -182,7 +182,7 @@ const Programs = () => {
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
                 , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
-            image: "https://miro.medium.com/v2/resize:fit:702/1*Ra02AqsQlC0KV229EvM98g.png", schedule: "3 days a week", name: "Mobile Development",
+            image: "https://assets-global.website-files.com/64a6644c2958e73937035816/6532586a7fdd85bf65cf790c_Mobile-App-Development.webp", schedule: "3 days a week", name: "Mobile Development",
             text: `Start your career as a Mobile App Developer today. Discover the intricacies of building engaging apps that captivate users. Acquire skills in crafting
              seamless user experiences that leave a lasting impact. Immerse yourself in the world of Mobile App Development to unleash your creativity and drive innovation.
               Let your passion and dedication steer your journey forward. Join a supportive community of developers
@@ -241,7 +241,7 @@ const Programs = () => {
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
                 , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "6 Months",
-            image: "https://usa.bootcampcdn.com/wp-content/uploads/sites/106/2020/07/CDG_blog_post_image_08.jpg", schedule: "4 days a week", name: "FullStack Web Development",
+            image: "https://media.licdn.com/dms/image/C4D12AQFDt085hzuDCg/article-cover_image-shrink_720_1280/0/1635415980086?e=2147483647&v=beta&t=1macLrC1cqWXJuntuDJVFVtD88FfOAGJjEUzCjMBqcw", schedule: "4 days a week", name: "FullStack Web Development",
             text: `Are you prepared to embark on an exciting journey into the multifaceted realm of full-stack development? Our comprehensive
            Full-Stack Development Course is your ticket to unlocking a wealth of opportunities in the
             dynamic world of software engineering. From front-end aesthetics to back-end functionality,
@@ -303,7 +303,7 @@ const Programs = () => {
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
                 , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "3 Months",
-            image: "https://tortoiseandharesoftware.com/wp-content/uploads/2020/09/WordPress-Design-Considerations-768x401.jpg", schedule: "2 days a week", name: "Web Designing (No code)",
+            image: "https://www.airtm.com/wp-content/uploads/2023/07/Webflow-portada.jpg", schedule: "2 days a week", name: "Web Designing (No code)",
             text: `Embark on the exciting journey of web development without needing to code.
          Explore the world of no-code development and unlock the ability to create stunning websites and applications effortlessly.
           With intuitive tools and platforms at your disposal, dive into the realm of web development with ease.
@@ -365,7 +365,7 @@ const Programs = () => {
                 'Basic computer skills',
                 'Laptop Specifications(8gb -16gb RAM, 256SSD or 500gb)'
                 , 'Introduction to software development'], applicationStatus: true, location: ["Remote", "On-site"], duration: "Monthly",
-            image: "https://img.etimg.com/thumb/width-640,height-480,imgsize-20302,resizemode-75,msid-100298720/jobs/c-suite/a-day-in-the-life-of-a-product-manager-what-to-expect.jpg", schedule: "2 days a week", name: "Coding class for kids (Age 4+)",
+            image: "https://www.imaginestemacademy.com/wp-content/uploads/2023/05/Coding-schools-for-kids-Nigeria-1080x675.jpg", schedule: "2 days a week", name: "Coding class for kids (Age 4+)",
             text: `
          Introduce your child to the world of coding with our interactive coding class designed for kids aged 4 and above.
           Watch as your young learner discovers the fundamentals of programming in a fun and engaging environment.
