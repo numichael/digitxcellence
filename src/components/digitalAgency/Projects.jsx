@@ -1,16 +1,19 @@
 import React from 'react'
-import calabartech1 from "../../assets/images/calabartech1.png"
-import calabartech2 from "../../assets/images/calabartech2.png"
-import calabartech3 from "../../assets/images/calabartech3.png"
 import qrs1 from "../../assets/images/qrs1.png"
 import qrs2 from "../../assets/images/qrs2.png"
 import qrs3 from "../../assets/images/qrs3.png"
 import lc1 from "../../assets/images/lc1.png"
 import lc2 from "../../assets/images/lc2.png"
 import lc3 from "../../assets/images/lc3.png"
+import zyon1 from "../../assets/images/zyon1.png"
+import zyon2 from "../../assets/images/zyon2.png"
+import zyon3 from "../../assets/images/zyon3.png"
 import propertymataaz1 from "../../assets/images/propertymataaz1.png"
 import propertymataaz2 from "../../assets/images/propertymataaz2.png"
 import propertymataaz3 from "../../assets/images/propertymataaz3.png"
+import tken1 from "../../assets/images/tken1.png"
+import tken2 from "../../assets/images/tken2.png"
+import tken3 from "../../assets/images/tken3.png"
 
 const Projects = () => {
     const projects = [
@@ -18,6 +21,8 @@ const Projects = () => {
         { name: "QRSweb", images: [qrs1, qrs2, qrs3], about: "Branding, Website, App", link: "https://qrsweb.com/" },
         { name: "Property Mataaz", images: [propertymataaz1, propertymataaz2, propertymataaz3], about: "Branding, Website, App", link: "https://www.propertymataaz.com/" },
         { name: "Loading Connect", images: [lc1, lc2, lc3], about: "Branding, Website, App", link: "https://loading-connect.netlify.app/" },
+        { name: "Zyon Technology", images: [zyon1, zyon2, zyon3], about: "Branding, Website, App", link: "https://zyontechnology.netlify.app/" },
+        { name: "TKEN", images: [tken1, tken2, tken3], about: "Branding, Website, App", link: "https://tkenonline.com/" },
     ]
     return (
         <div className='w-full min-h-[50rem] flex p-4 py-20 lg:p-[10rem] justify-center bg-[#eeffe2]'>

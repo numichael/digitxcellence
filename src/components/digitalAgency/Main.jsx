@@ -32,9 +32,9 @@ const Main = () => {
             <Element className='w-full' name='testimonial'>
                 <Testimonial />
             </Element>
-            <Element className='w-full' name='clients'>
+            {/* <Element className='w-full' name='clients'>
                 <Clients />
-            </Element>
+            </Element> */}
             <Element className='w-full' name='blog'>
                 <News />
             </Element>

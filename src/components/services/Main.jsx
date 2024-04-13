@@ -6,6 +6,7 @@ import Values from '../digitalAgency/Values'
 import Contact from '../digitalAgency/Contact'
 import { Element } from 'react-scroll'
 import AnimatedValues from './AnimatedValues'
+import Clients from '../digitalAgency/Clients'
 
 const CompanyServices = () => {
   return (
@@ -16,11 +17,11 @@ const CompanyServices = () => {
       <Element className='w-full' name='overview'>
         <Services />
       </Element>
-      {/* <Element className='w-full' name='values'>
-        <Values />
-      </Element> */}
       <Element className='w-full' name='animatedvalues'>
         <AnimatedValues />
+      </Element>
+      <Element className='w-full' name='values'>
+        <Clients />
       </Element>
       <Element className='w-full' name='contact'>
         <Contact />
