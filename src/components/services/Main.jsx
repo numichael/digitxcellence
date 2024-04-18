@@ -1,11 +1,11 @@
 import React from 'react'
 import Intro from './Intro'
 import Speciality from './Speciality'
-import Services from '../digitalAgency/Services'
-import Contact from '../digitalAgency/Contact'
+import Services from '../home/Services'
+import Contact from '../home/Contact'
 import { Element } from 'react-scroll'
 import AnimatedValues from './AnimatedValues'
-import Clients from '../digitalAgency/Clients'
+import Clients from '../home/Clients'
 
 const CompanyServices = () => {
   return (

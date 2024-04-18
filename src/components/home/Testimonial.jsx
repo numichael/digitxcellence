@@ -1,6 +1,7 @@
 import React from 'react'
 import google from "../../assets/images/google.png"
 import testuser from "../../assets/images/test-user.png"
+import { useInView } from 'react-intersection-observer'
 
 const Testimonial = () => {
     const testimonials = [
@@ -8,6 +9,7 @@ const Testimonial = () => {
         { icon: google, text: "Working with Digit Xcellence was a pleasure. They were responsive, reliable, and delivered a top-quality web and mobile application on time and on budget.", name: "Kukoyi A. Abayomi", role: "CEO, Technoomni LLC, Nigeria", userImage: testuser },
         { icon: google, text: "I have worked with several software development companies n the past, but none of them compare to Digit Xcellence. They are truly experts in their field.", name: "Damilola Alabi", role: "Creative Director, Fusion 87 Design Studio, USA", userImage: testuser },
     ]
+
     return (
         <div className='w-full flex p-4 py-20 lg:p-[10rem] justify-center'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[4rem] justify-center'>
@@ -19,22 +21,33 @@ const Testimonial = () => {
                 <div className="grid lg:grid-cols-3 gap-6">
                     {
                         testimonials.map((testimonial, index) => (
-                            <div key={index} className='flex flex-col gap-6 lg:gap-8 py-8 lg:pb-16 transition-all duration-500 cursor-pointer border border-b-4 border-b-green-700 border-t border-white hover:border-t-green-700'>
-                                <div className='grid'>
-                                    <p className='text-6xl text-green-700'>''</p>
-                                    <i className='text-[0.82rem] lg:text-[1rem]'>"{testimonial.text}"</i>
-                                </div>
-                                
-                                <div className='flex gap-6 items-center'>
-                                    <img className="w-12 h-12 lg:w-14 lg:h-14 rounded-full" src={testimonial.userImage} />
-                                    <div className='flex flex-col'>
-                                        <h4 className='font-medium text-green-700'>{testimonial.name}</h4>
-                                        <p className='text-[0.82rem] text-[#888686]'>{testimonial.role}</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <Element key={index} name={testimonial.name} role={testimonial.role} text={testimonial.text} userImage={testimonial.userImage} index={index} />
                         ))
                     }
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Element = ({ name, role, text, userImage, index }) => {
+
+    const { ref, inView } = useInView()
+
+    const props = { bottom: inView ? "0rem" : "-6rem" }
+
+    return (
+        <div ref={ref} style={props} className={`relative flex flex-col gap-6 lg:gap-8 py-8 lg:pb-16 transition-all ${index === 0? "duration-500": index === 1? "duration-1000": "duration-[1.5s]"} cursor-pointer border border-b-4 border-b-green-700 border-t border-white hover:border-t-green-700`}>
+            <div className='grid'>
+                <p className='text-6xl text-green-700'>''</p>
+                <i className='text-[0.82rem] lg:text-[1rem]'>"{text}"</i>
+            </div>
+
+            <div className='flex gap-6 items-center'>
+                <img className="w-12 h-12 lg:w-14 lg:h-14 rounded-full" src={userImage} />
+                <div className='flex flex-col'>
+                    <h4 className='font-medium text-green-700'>{name}</h4>
+                    <p className='text-[0.82rem] text-[#888686]'>{role}</p>
                 </div>
             </div>
         </div>

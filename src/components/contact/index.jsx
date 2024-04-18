@@ -13,7 +13,7 @@ const ContactPage = () => {
         <div className='w-full flex flex-col items-center p-4 lg:p-20 text-[0.85rem]'>
             <Element name="home" className='w-full pt-[2rem] lg:max-w-[90rem] flex flex-col items-center gap-6'>
                 <h3 className='text-3xl text-green-950'>Get in touch</h3>
-                <p className='flex items-end gap-2'><span className='font-medium text-green-950'>Monday to Friday: </span>9AM - 9PM EST |<span className='font-medium text-green-950'>| Saturday & Sunday: </span> 10AM - 6PM EST</p>
+                <p className='flex items-end gap-2'><span className='font-medium text-green-950'>Monday to Friday: </span>9AM - 9PM WAT |<span className='font-medium text-green-950'>| Saturday & Sunday: </span> 10AM - 6PM WAT</p>
                 <div className='flex flex-wrap  gap-4 lg:gap-6 items-center justify-center'>{
                     contacts.map((contact, index) => (
                         <a href={contact.link} target='_blank' key={index} className='cursor-pointer h-[10rem] w-[10rem] lg:w-[15rem] lg:h-[15rem] bg-green-100 flex flex-col items-center justify-center gap-2 rounded-md'>

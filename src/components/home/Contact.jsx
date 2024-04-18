@@ -3,11 +3,11 @@ import React from 'react'
 const Contact = () => {
 
     const profiles = [
-        { style: "fa-brands fa-linkedin-in text-blue-500 border-blue-400", link: "https://www.linkedin.com/company/digitxcellence/" },
-        { style: "fa-solid fa-phone text-red-500 border-red-400", link: "tel:+2348188680159" },
-        { style: "fa-brands fa-whatsapp text-green-500 border-green-400", link: "https://wa.me/+2348188680159" },
-        { style: "fa-brands fa-instagram text-red-500 border-red-400", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=" },
-        { style: "fa-brands fa-facebook-f text-blue-500 border-blue-400", link: "https://www.facebook.com/digitxcellence?mibextid=ZbWKwL" },
+        { style: "fa-brands fa-linkedin-in text-blue-500 border-blue-400 hover:border-blue-400", link: "https://www.linkedin.com/company/digitxcellence/" },
+        { style: "fa-solid fa-phone text-red-500 border-red-400 hover:border-red-400 ", link: "tel:+2348188680159" },
+        { style: "fa-brands fa-whatsapp text-green-500 border-green-400 hover:border-green-400", link: "https://wa.me/+2348188680159" },
+        { style: "fa-brands fa-instagram text-red-500 border-red-400 hover:border-red-400", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=" },
+        { style: "fa-brands fa-facebook-f text-blue-500 border-blue-400 hover:border-blue-400", link: "https://www.facebook.com/digitxcellence?mibextid=ZbWKwL" },
     ]
 
     return (
@@ -15,8 +15,8 @@ const Contact = () => {
             <div className='w-full flex justify-evenly lg:justify-between max-w-[30rem]'>
                 {
                     profiles.map((profile, index) => (
-                        <a href={profile.link} target='_blank' key={index}>
-                            <i key={index} className={profile.style + " text-[#3c424577] text-lg lg:text-2xl cursor-pointer border-b-2 medialinks px-3 py-1 rounded-md"} ></i>
+                        <a href={profile.link} className={`transition-all duration-500 border-b-2 border-transparent pb-2 ${profile.style.split(' ')[4]}`} target='_blank' key={index}>
+                            <i key={index} className={profile.style + "text-[#3c424577] text-lg lg:text-2xl cursor-pointer border-b-2 medialinks px-3 py-1 rounded-md"} ></i>
                         </a>
                     ))
                 }

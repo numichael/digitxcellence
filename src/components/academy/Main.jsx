@@ -2,7 +2,7 @@ import { Element } from 'react-scroll'
 import Intro from './Intro'
 import Programs from './Programs'
 import GettingStarted from './GettingStarted'
-import Contact from '../digitalAgency/Contact'
+import Contact from '../home/Contact'
 
 const Academy = () => {
     return (

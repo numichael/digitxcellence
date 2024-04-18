@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Element } from 'react-scroll';
-import Contact from '../digitalAgency/Contact';
+import Contact from '../home/Contact';
 
 const ProgramDetails = () => {
     const [details, setDetails] = useState({})

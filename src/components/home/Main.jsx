@@ -9,7 +9,7 @@ import { Element } from 'react-scroll'
 
 const Main = () => {
     return (
-        <div className='w-full flex flex-col items-center lg:p-0'>
+        <div className='w-full flex flex-col items-center lg:p-0 z-10'>
             <Element className='w-full flex justify-center' name='home'>
                 <Intro />
             </Element>
