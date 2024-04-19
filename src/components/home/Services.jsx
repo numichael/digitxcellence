@@ -12,8 +12,7 @@ const Services = ({ digitalAgency = false }) => {
 
     const services = [
         { name: "Web Design", text: "We excel at transforming your visions into captivating digital realities, crafting visually stunning websites and ensuring user experiences are seamless. Let's collaborate and venture into uncharted digital territories together.", illustration: webdesign },
-        { name: "Software Development", text: "Unlock the potential of cutting-edge technology with our custom software solutions, crafted to transform your business. From streamlining processes to driving efficiency, we're dedicated to your digital success. Let's innovate and grow together.", illustration: softwareengineering },
-        { name: "Digital Marketing", text: "Establish a commanding online presence with our meticulously crafted, data-driven marketing strategies, perfectly tailored to your objectives. Let's unite to elevate your brand and conquer the digital landscape together.", illustration: marketing },
+        { name: "App Development", text: "Unlock the potential of advanced technology with our specialized app development solutions. Engineered for efficiency and digital transformation, let's collaborate to innovate and achieve unprecedented growth together.", illustration: softwareengineering },
         { name: "Graphics Design", text: "Stand out in the digital realm with visually striking graphics that capture attention and foster meaningful connections across platforms. Our customized approach ensures your brand shines uniquely, leaving a lasting impression and sparking lasting engagement.", illustration: design },
         { name: "Academy", text: "Empower your team with comprehensive training in web design, software development, and digital skills, fostering innovation and excellence. Together, we'll cultivate a culture of growth, propelling your team to new heights of success in the ever-evolving digital landscape.", illustration: academy },
     ];
