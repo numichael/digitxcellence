@@ -28,8 +28,9 @@ const News = () => {
             image: marketing,
             link: "https://www.forbes.com/sites/forbestechcouncil/2023/03/01/web3-embracing-the-future-trusting-the-present/?sh=4f6b5aae3620"
         }
+
     ]
-   
+
     return (
         <div className='w-full min-h-[50rem] flex flex-col p-4 py-20 lg:px-[10rem] gap-[8rem] items-center'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[6rem]'>
