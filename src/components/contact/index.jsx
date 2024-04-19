@@ -16,7 +16,7 @@ const ContactPage = () => {
                 <p className='flex items-end gap-2'><span className='font-medium text-green-950'>Monday to Friday: </span>9AM - 9PM WAT |<span className='font-medium text-green-950'>| Saturday & Sunday: </span> 10AM - 6PM WAT</p>
                 <div className='flex flex-wrap  gap-4 lg:gap-6 items-center justify-center'>{
                     contacts.map((contact, index) => (
-                        <a href={contact.link} target='_blank' key={index} className='cursor-pointer h-[10rem] w-[10rem] lg:w-[15rem] lg:h-[15rem] bg-green-100 flex flex-col items-center justify-center gap-2 rounded-md'>
+                        <a href={contact.link} target='_blank' key={index} className='cursor-pointer border-b-4 transition-all duration-500 border-transparent hover:border-green-700 h-[10rem] w-[10rem] lg:w-[15rem] lg:h-[15rem] bg-green-100 flex flex-col items-center justify-center gap-2 rounded-md'>
                             <i className={`text-3xl lg:text-6xl rounded-full ${contact.icon}`}></i>
                             <h3 className='font-semibold'>{contact.name}</h3>
                             <p className='text-[0.8rem] text-center px-4'>{contact.availability}</p>

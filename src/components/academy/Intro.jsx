@@ -17,7 +17,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="w-1/2 max-w-[25rem] h-full flex flex-col justify-evenly bg-white rounded-md border -mr-6 p-4">
-          <h3 className='text-xl text-green-700 font-medium'>Corporate</h3>
+          <h3 className='text-xl text-green-700 font-medium'>Group</h3>
           <p className='text-[0.82rem]'>Professional Staff training courses applicable to any corporate organization.</p>
           <div>
             <button type="button" className='normalButton'>Browse Courses</button>

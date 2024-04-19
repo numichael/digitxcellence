@@ -1,6 +1,7 @@
 import React from 'react'
 import { scroller } from 'react-scroll'
 import { useNavigate } from 'react-router-dom'
+import { useInView } from 'react-intersection-observer'
 
 const Programs = () => {
 
@@ -395,29 +396,7 @@ const Programs = () => {
                 <div className="w-full flex flex-wrap gap-6 justify-center">
                     {
                         programs.map((program, index) => (
-                            <div onClick={() => navigateToProjectDetails(program)} key={index} className={`mb-6 cursor-pointer rounded-md border w-[20rem] transition-all duration-500 h-[30rem] relative`}>
-                                <div className="flex h-full w-full justify-center items-center relative">
-                                    <div className={`transition-all w-full h-full duration-500`}>
-                                        <div className="w-full h-1/2 bg-white">
-                                            <img className='h-full w-full rounded-t-md' src={program.image} alt={program.name} />
-                                        </div>
-                                        <div className="w-full h-1/2 p-4 flex flex-col justify-between">
-                                            <h3 className='font-medium text-lg text-green-700'>{program.name}</h3>
-                                            <p className='text-[0.82rem]'>{program.text.length > 220 ? program.text.slice(0, 215) + "..." : program.text}</p>
-                                            <div className="w-full flex justify-between text-[0.82rem]">
-                                                <span className='flex gap-2 items-center'>
-                                                    <i className="text-green-700 fa-solid fa-calendar-days"></i>
-                                                    <p>{program.duration}</p>
-                                                </span>
-                                                <span className='flex gap-2 items-center'>
-                                                    <i className="text-green-700 fa-solid fa-users-viewfinder"></i>
-                                                    <p>{program.schedule}</p>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <Program program={program} key={index} index={index} navigateToProjectDetails={navigateToProjectDetails} />
                         ))
                     }
                 </div>
@@ -427,3 +406,36 @@ const Programs = () => {
 }
 
 export default Programs
+
+const Program = ({ program, navigateToProjectDetails, index }) => {
+
+    const { ref, inView } = useInView()
+    const props1 = { left: inView ? "0rem" : "-6rem" }
+    const props2 = { top: inView ? "0rem" : "-6rem" }
+    const props3 = { right: inView ? "0rem" : "-6rem" }
+    return (
+        <div ref={ref} style={(index + 1) % 3 === 0 ? props3 : (index + 1) % 2 === 0 ? props2 : props1} onClick={() => navigateToProjectDetails(program)} className={`traansition-all duration-1000 mb-6 cursor-pointer rounded-md border w-[20rem] transition-all h-[30rem] relative`}>
+            <div className="flex h-full w-full justify-center items-center relative">
+                <div className={`transition-all w-full h-full duration-500`}>
+                    <div className="w-full h-1/2 bg-white">
+                        <img className='h-full w-full rounded-t-md' src={program.image} alt={program.name} />
+                    </div>
+                    <div className="w-full h-1/2 p-4 flex flex-col justify-between">
+                        <h3 className='font-medium text-lg text-green-700'>{program.name}</h3>
+                        <p className='text-[0.82rem]'>{program.text.length > 220 ? program.text.slice(0, 215) + "..." : program.text}</p>
+                        <div className="w-full flex justify-between text-[0.82rem]">
+                            <span className='flex gap-2 items-center'>
+                                <i className="text-green-700 fa-solid fa-calendar-days"></i>
+                                <p>{program.duration}</p>
+                            </span>
+                            <span className='flex gap-2 items-center'>
+                                <i className="text-green-700 fa-solid fa-users-viewfinder"></i>
+                                <p>{program.schedule}</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
