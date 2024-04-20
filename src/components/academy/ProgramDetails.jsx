@@ -10,7 +10,6 @@ const ProgramDetails = () => {
     useEffect(() => {
         if (programDetails) {
             setDetails(JSON.parse(programDetails))
-            console.log(JSON.parse(programDetails))
         } else {
             navigate("/academy")
         }
@@ -20,7 +19,6 @@ const ProgramDetails = () => {
         setDetails((prevTab) => {
             const updatedCourseDetails = prevTab?.courseDetails?.map((detail) => {
                 if (detail?.name === payload) {
-                    console.log(detail.clicked)
                     return { ...detail, clicked: !detail.clicked };
                 }
                 else {
