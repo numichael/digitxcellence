@@ -1,4 +1,6 @@
 import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { scroller } from 'react-scroll'
 
 const Contact = () => {
 
@@ -9,6 +11,21 @@ const Contact = () => {
         { style: "fa-brands fa-instagram text-red-500 border-red-400 hover:border-red-400", link: "https://www.instagram.com/digit_xcellence24?igsh=bXUwNGhnemt1ZzA=" },
         { style: "fa-brands fa-facebook-f text-blue-500 border-blue-400 hover:border-blue-400", link: "https://www.facebook.com/digitxcellence?mibextid=ZbWKwL" },
     ]
+
+    const navigate = useNavigate()
+
+    const location = useLocation()
+
+    const redirectPath = (payload) => {
+        if (location.pathname.includes(payload.split(' ')[0])) {
+            scroller.scrollTo(payload.split(' ')[1], { smooth: true, duration: 500 })
+        } else {
+            navigate(payload.split(' ')[0])
+            setTimeout(() => {
+                scroller.scrollTo(payload.split(' ')[1], { smooth: true, duration: 500 })
+            }, 20);
+        }
+    }
 
     return (
         <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4 lg:p-[3rem] bg-[#eeffe2]'>
@@ -34,23 +51,26 @@ const Contact = () => {
                 </div>
                 <div className="w-full lg:w-[55%] p-2 lg:pl-16 flex flex-col gap-16 lg:flex-row">
                     <div className="w-1/2">
-                        <h4 className='text-xl font-semibold mb-10 text-green-800'>Services</h4>
+                        <h4 className='text-xl font-semibold mb-10 text-green-800'>Resources</h4>
                         <div className='flex flex-col gap-6 text-[0.82rem]'>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
-                            <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
+                            <p onClick={() => redirectPath("/home projects")} className='cursor-pointer hover:text-green-500'>Our Projects</p>
+                            <p onClick={() => redirectPath("/home aboutus")} className='cursor-pointer hover:text-green-500'>About Us</p>
+                            <p onClick={() => redirectPath("/services overview")} className='cursor-pointer hover:text-green-500'>Our Services</p>
+                            <p onClick={() => redirectPath("/academy programs")} className='cursor-pointer hover:text-green-500'>Academic Programs</p>
+                            <p onClick={() => redirectPath("/services values")} className='cursor-pointer hover:text-green-500'>Our Values</p>
+                            <p onClick={() => redirectPath("/services clients")} className='cursor-pointer hover:text-green-500'>Top Clients</p>
+                            <p onClick={() => redirectPath("/home blog")} className='cursor-pointer hover:text-green-500'>News</p>
                         </div>
                     </div>
                     <div className="w-full flex flex-row gap-16 justify-between">
                         <div>
-                            <h4 className='text-xl font-semibold mb-10 text-green-800'>Resources</h4>
+                            <h4 className='text-xl font-semibold mb-10 text-green-800'>Services</h4>
                             <div className='flex flex-col gap-6 text-[0.82rem]'>
-                                <p className='cursor-pointer hover:text-green-500'>Case Studies</p>
-                                <p className='cursor-pointer hover:text-green-500'>Case Studies</p>
-                                <p className='cursor-pointer hover:text-green-500'>Case Studies</p>
+                                <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
+                                <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
+                                <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
+                                <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
+                                <p className='cursor-pointer hover:text-green-500'>Online Marketing</p>
                             </div>
                         </div>
                         <div>

@@ -16,10 +16,10 @@ const CompanyServices = () => {
       <Element className='w-full' name='overview'>
         <Services />
       </Element>
-      <Element className='w-full' name='animatedvalues'>
+      <Element className='w-full' name='values'>
         <AnimatedValues />
       </Element>
-      <Element className='w-full' name='values'>
+      <Element className='w-full' name='clients'>
         <Clients />
       </Element>
       <Element className='w-full' name='contact'>
