@@ -60,7 +60,7 @@ const Navbar = () => {
 
     return (
         <div className={`w-full flex flex-col items-center`}>
-            <div className={`fixed top-0 right-0 p-3 h-screen ${visibleMobileMenu ? "bg-white w-5/6 border-r border-#333" : "w-0 bg-transparent"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu ? "opacity-1" : !visible && visibleMobileMenu ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
+            <div style={{height: "100svh"}} className={`fixed top-0 right-0 p-3 ${visibleMobileMenu ? "bg-white w-5/6 border-r border-#333" : "w-0 bg-transparent"} ${visible && visibleMobileMenu ? "opacity-1" : visible && !visibleMobileMenu ? "opacity-1" : !visible && visibleMobileMenu ? "opacity-1" : "opacity-0"} transition-all duration-500 z-[1000] block lg:hidden`}>
                 <FontAwesomeIcon icon={faBars} className='text-xl absolute right-4' onClick={() => toggleMobileMenu(!visibleMobileMenu)} />
                 <div className={`flex flex-col pl-6 h-full py-10 transition-all duration-500 ${visibleMobileMenu ? "opacity-1 bg-white w-full" : "bg-transparent opacity-0 w-0"}`}>
                     <h2 className={`text-green-700 text-4xl pb-[4rem] font-semibold ${visibleMobileMenu ? "w-auto" : "w-0"}`} onClick={() => redirectPath("/home home")}>Digit Xcellence</h2>
