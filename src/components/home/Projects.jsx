@@ -26,7 +26,7 @@ const Projects = () => {
         { name: "Loading Connect", images: [lc1, lc2, lc3], about: "Branding, Website, App", link: "https://loading-connect.netlify.app/" },
     ]
     return (
-        <div className='w-full min-h-[50rem] flex p-4 py-20 lg:p-[10rem] justify-center bg-[#eeffe2]'>
+        <div className='w-full min-h-[50rem] flex p-4 py-20 lg:p-[10rem] justify-center bg-green-50'>
             <div className='w-full flex max-w-[65rem] gap-[4rem] lg:gap-[8rem]'>
                 <div className='flex flex-col gap-6 lg:gap-10 w-full'>
                     <p className="text-[0.82rem] lg:text-xl text-red-700 lg:font-semibold">Our Projects</p>

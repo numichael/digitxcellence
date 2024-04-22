@@ -28,7 +28,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4 lg:p-[3rem] bg-[#eeffe2]'>
+        <div className='w-full flex flex-col gap-[4rem] lg:gap-[8rem] items-center p-4 lg:p-[3rem] bg-green-50'>
             <div className='w-full flex justify-evenly lg:justify-between max-w-[30rem]'>
                 {
                     profiles.map((profile, index) => (

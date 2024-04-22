@@ -97,7 +97,7 @@ const ProgramDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex flex-col items-center p-4 py-20 lg:p-[4rem] justify-center text-[0.85rem] bg-[#eeffe2]">
+                <div className="w-full flex flex-col items-center p-4 py-20 lg:p-[4rem] justify-center text-[0.85rem] bg-green-50">
                     <div className="w-full max-w-[90rem] flex flex-col items-center">
                         {
                             details?.courseDetails?.map((detail, index) => (

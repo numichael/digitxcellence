@@ -18,7 +18,7 @@ const Services = ({ digitalAgency = false }) => {
     ];
 
     return (
-        <div className={`w-full min-h-[50rem] bg-[#eeffe2] flex justify-center px-4 py-20 lg:px-[4rem] lg:py-[10rem]`}>
+        <div className={`w-full min-h-[50rem] bg-green-50 flex justify-center px-4 py-20 lg:px-[4rem] lg:py-[10rem]`}>
             <div className='w-full flex flex-col max-w-[90rem] gap-[1rem] lg:gap-[8rem]'>
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">Our Services</p>
