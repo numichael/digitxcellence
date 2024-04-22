@@ -15,37 +15,37 @@ const Clients = () => {
     ]
 
     return (
-        <div className='w-full min-h-[50rem] bg-[#eeffe2] flex justify-center p-4 py-20 lg:p-[10rem]'>
+        <div className='w-full min-h-[50rem] bg-white flex justify-center p-4 py-20 lg:p-[10rem]'>
             <div className='w-full flex flex-col max-w-[90rem] gap-[8rem]'>
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-[0.82rem] lg:text-xl text-red-700 lg:font-semibold">Top Clients</p>
                     <h2 className='text-3xl lg:text-6xl text-green-950'>Clients we've worked with</h2>
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-[3rem] lg:gap-[10rem]">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-[3rem] lg:gap-[10rem] text-[0.85rem] lg:text-[0.9rem]">
                     <div className='relative flex flex-col gap-2 items-center justify-center'>
                         {/* <div className="bg-[white] hidden lg:block opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div> */}
-                        <img src={clients[0].logo} className='w-[8rem] h-[3rem]' alt="" />
-                        <p className='text-green-800'>{clients[0].name}</p>
+                        <img src={clients[0].logo} className='w-[6rem] h-[2rem] lg:w-[8rem] lg:h-[3rem]' alt="" />
+                        <p className='text-green-800 text-center'>{clients[0].name}</p>
                     </div>
                     <div className='relative flex flex-col gap-2 items-center justify-center'>
                         {/* <div className="bg-[white] hidden lg:block opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div> */}
-                        <img src={clients[1].logo} className='w-[8rem] h-[3rem]' alt="" />
-                        <p className='text-green-800'>{clients[1].name}</p>
+                        <img src={clients[1].logo} className='w-[6rem] h-[2rem] lg:w-[8rem] lg:h-[3rem]' alt="" />
+                        <p className='text-green-800 text-center'>{clients[1].name}</p>
                     </div>
                     <div className='relative flex flex-col gap-2 items-center justify-center'>
                         {/* <div className="bg-[white] hidden lg:block opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div> */}
-                        <img src={clients[2].logo} className='w-[3rem] h-[3rem]' alt="" />
-                        <p className='text-green-800'>{clients[2].name}</p>
+                        <img src={clients[2].logo} className='w-[2rem] h-[2rem] lg:w-[3rem] lg:h-[3rem]' alt="" />
+                        <p className='text-green-800 text-center'>{clients[2].name}</p>
                     </div>
                     <div className='relative flex flex-col gap-2 items-center justify-center'>
                         {/* <div className="bg-[white] hidden lg:block opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div> */}
-                        <img src={clients[3].logo} className='w-[8rem] h-[3rem]' alt="" />
-                        <p className='text-green-800'>{clients[3].name}</p>
+                        <img src={clients[3].logo} className='w-[6rem] h-[2rem] lg:w-[8rem] lg:h-[3rem]' alt="" />
+                        <p className='text-green-800 text-center'>{clients[3].name}</p>
                     </div>
                     <div className='relative flex flex-col gap-2 items-center justify-center'>
                         {/* <div className="bg-[white] hidden lg:block opacity-[60%] hover:bg-transparent transition-all duration-500 w-full h-full absolute"></div> */}
-                        <img src={clients[4].logo} className='w-[8rem] h-[3rem]' alt="" />
-                        <p className='text-green-800'>{clients[4].name}</p>
+                        <img src={clients[4].logo} className='w-[12rem] h-[2rem]' alt="" />
+                        <p className='text-green-800 text-center'>{clients[4].name}</p>
                     </div>
                 </div>
             </div>
