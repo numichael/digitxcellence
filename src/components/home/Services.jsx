@@ -19,14 +19,14 @@ const Services = ({ digitalAgency = false }) => {
 
     return (
         <div className={`w-full min-h-[50rem] bg-[#eeffe2] flex justify-center px-4 py-20 lg:px-[4rem] lg:py-[10rem]`}>
-            <div className='w-full flex flex-col max-w-[90rem] gap-[3rem] lg:gap-[8rem]'>
+            <div className='w-full flex flex-col max-w-[90rem] gap-[1rem] lg:gap-[8rem]'>
                 <div className='flex flex-col gap-6 w-full lg:w-[55%]'>
                     <p className="text-base lg:text-xl text-red-700 lg:font-semibold">Our Services</p>
                     <h2 className={`text-3xl lg:text-6xl text-green-950`}>What We Can Do For You</h2>
                     {digitalAgency ? <p className="text-[0.82rem] lg:text-lg font-medium text-[#888686]">At Digit Xcellence, we're not just another digital agency—we're your partners in success. We have a team of experienced professionals who are dedicated to creating outstanding digital solutions. We provide a complete set of services customized to meet all your needs.</p> : null}
                 </div>
                 <div className="flex justify-center">
-                    <div className="grid justify-center gap-[3rem] max-w-[70rem]">
+                    <div className="grid justify-center gap-[4rem] max-w-[70rem]">
                         {services.map((service, index) => (
                             <ServiceCard key={index} {...service} index={index} />
                         ))}
@@ -47,12 +47,12 @@ const ServiceCard = ({ name, text, illustration, index }) => {
         }, 20);
     }
     const { ref, inView } = useInView();
-    const propsToRight = {left: inView? "-0rem": "-6rem"}
-    const propsToLeft = {right: inView? "-0rem": "-6rem"}
-      
+    const propsToRight = { left: inView ? "-0rem" : "-6rem" }
+    const propsToLeft = { right: inView ? "-0rem" : "-6rem" }
+
     return (
-        <div className={`relative flex flex-col-reverse ${index % 2 === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} border-t-[3px] border-r-[3px] transition-all duration-500 border-transparent hoveredCard rounded-lg p-8 lg:h-[27rem] gap-[8rem] w-full justify-between`}>
-            <div ref={ref} style={index % 2 === 0?propsToLeft: propsToRight} className={`relative transition-all duration-1000 flex flex-col gap-4 lg:gap-4 w-full lg:w-1/2 items-start justify-center`}>
+        <div className={`relative flex flex-col-reverse ${index % 2 === 1 ? "lg:flex-row" : "lg:flex-row-reverse"} border-t-[3px] border-r-[3px] transition-all duration-500 border-transparent hoveredCard rounded-lg p-4 lg:p-8 lg:h-[27rem] gap-[2rem] lg:gap-[8rem] w-full justify-between`}>
+            <div ref={ref} style={index % 2 === 0 ? propsToLeft : propsToRight} className={`relative transition-all duration-1000 flex flex-col gap-4 lg:gap-4 w-full lg:w-1/2 items-start justify-center`}>
                 <h3 className='text-2xl font-semibold text-green-700'>{name}</h3>
                 <p className='text-[0.82rem] lg:text-md'>{text}</p>
                 <button onClick={() => navigateToLink("")} type='button' className='p-3 outline-none border border-green-700 hover:bg-green-700 hover:text-white transition-all duration-500 text-green-700 font-medium rounded-lg'>Learn More</button>
