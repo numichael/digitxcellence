@@ -120,7 +120,7 @@ const ProgramDetails = () => {
                             ))
                         }
                     </div>
-                    <div className="flex w-full justify-center gap-8">
+                    <div className="flex flex-col lg:flex-row w-full justify-center gap-8">
                         <button type="button" className='text-base p-3 px-8 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg'>Apply Now</button>
                         <button type="button" className='text-base p-3 px-8 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg'>Speak To a Learning Advisor</button>
                     </div>
