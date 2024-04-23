@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer'
 const Programs = () => {
 
     const programs = [
-        // duration
         {
             courseDetails: [
                 {

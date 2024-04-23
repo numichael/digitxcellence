@@ -56,7 +56,7 @@ const ProgramDetails = () => {
                         </div>
                         <div className='flex flex-col gap-10 p-8 lg:p-0 bg-white w-full h-full lg:w-[55%] rounded-[2rem]'>
                             <img src={details?.image} alt="mobile dev svg" className='h-full w-full scale-105 rounded-md' />
-                            <div className="flex gap-6 lg:hidden">
+                            <div className="flex flex-col gap-6 lg:hidden">
                                 <button type='button' className={`block lg:hidden p-3 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg`}>Apply Now</button>
                                 <button type='button' className={`block lg:hidden p-3 outline-none border border-green-700 hover:scale-105 bg-green-700 transition-all duration-500 text-white font-medium rounded-lg`}>Download Syllabus</button>
                             </div>

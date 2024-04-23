@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Academy from "./components/academy/Main";
 import ProgramDetails from "./components/academy/ProgramDetails";
 import ContactPage from "./components/contact";
+import ServiceDetails from "./components/services/ServiceDetails";
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="academy" element={<Academy />} />
           <Route path="/program-details" element={<ProgramDetails />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/service-details" element={<ServiceDetails />} />
         </Route>
       </Routes>
     </div>
