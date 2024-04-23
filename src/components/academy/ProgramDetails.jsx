@@ -93,7 +93,7 @@ const ProgramDetails = () => {
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-credit-card text-[2rem]"></i>
                             <p>Cost</p>
-                            <p className='text-base text-center'># {details?.cost}</p>
+                            <p className='text-base text-center'>## {details?.cost}</p>
                         </div>
                     </div>
                 </div>
