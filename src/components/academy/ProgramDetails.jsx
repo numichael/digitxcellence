@@ -64,36 +64,36 @@ const ProgramDetails = () => {
                     </div>
                 </div>
                 <div className="w-full flex p-4 py-20 lg:p-[4rem] justify-center text-[0.85rem] bg-green-900 text-white">
-                    <div className='w-full flex flex-col lg:flex-row lg:max-w-[90rem] gap-[4rem] justify-evenly items-center max-w-[90rem]'>
+                    <div className='w-full grid grid-cols-2 lg:flex lg:flex-row lg:max-w-[90rem] gap-[4rem] justify-evenly items-center max-w-[90rem]'>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-regular text-gray-200 fa-hourglass-half text-[2rem]"></i>
                             <p>Duration</p>
-                            <p className='text-base'>{details?.duration}</p>
+                            <p className='text-base text-center'>{details?.duration}</p>
                         </div>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-calendar-day text-[2rem]"></i>
                             <p>Start Date</p>
-                            <p className='text-base'>{details?.startDate}</p>
+                            <p className='text-base text-center'>{details?.startDate}</p>
                         </div>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-layer-group text-[2rem]"></i>
                             <p>Level</p>
-                            <p className='text-base'>{details?.requiredLevel}</p>
+                            <p className='text-base text-center'>{details?.requiredLevel}</p>
                         </div>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-list-check text-[2rem]"></i>
                             <p>Prerequisites</p>
-                            <p className='text-base'>{details?.prerequisites ? details?.prerequisites[0] : null}</p>
+                            <p className='text-base text-center'>{details?.prerequisites ? details?.prerequisites[0] : null}</p>
                         </div>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-diagram-project text-[2rem]"></i>
                             <p>Projects</p>
-                            <p className='text-base'>{details?.projects} projects</p>
+                            <p className='text-base text-center'>{details?.projects} projects</p>
                         </div>
                         <div className="flex flex-col gap-4 items-center">
                             <i className="fa-solid text-gray-200 fa-credit-card text-[2rem]"></i>
                             <p>Cost</p>
-                            <p># {details?.cost}</p>
+                            <p className='text-base text-center'># {details?.cost}</p>
                         </div>
                     </div>
                 </div>
